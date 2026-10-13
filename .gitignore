@@ -6,3 +6,4 @@ work/screens/
 work/qa/screens/
 .env
 *.log
+work/lighthouse/

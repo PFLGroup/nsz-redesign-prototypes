@@ -1,5 +1,5 @@
-# QA 2026-10-13T07:38:56.236Z
-Base: http://127.0.0.1:51216/nsz-redesign-prototypes/
+# QA 2026-10-13T07:46:22.623Z
+Base: https://pflgroup.github.io/nsz-redesign-prototypes/
 
 ## 01-nowoczesny
 - fatal: 0
@@ -57,4 +57,4 @@ Base: http://127.0.0.1:51216/nsz-redesign-prototypes/
 - interakcje: {"variant":"05-awangardowy","menuOpens":true,"menuEscCloses":true,"firstTab":"Przejdź do treści","focusVisible":true,"emptyState":true,"afterClear":9,"filterReduces":"2/9","queryParam":1,"galleryNext":"0→1","galleryKeyboard":"0","toc":8,"progress":1,"internalLinks":18,"brokenLinks":[],"noJsItemsVisible":9,"noJsArticleWords":912,"reducedMotionClass":true,"zoom200overflow":46,"pageErrors":[]}
 
 ## selektor
-[{"w":390,"overflowX":0,"axe":[],"errors":["Failed to load resource: the server responded with a status of 404 (Not Found)","Failed to load resource: the server responded with a status of 404 (Not Found)","Failed to load resource: the server responded with a status of 404 (Not Found)"],"failed":["404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/01-nowoczesny.png","404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/02-ultranowoczesny.png","404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/03-tradycyjny.png"],"external":[],"banner":true,"noindex":true},{"w":1440,"overflowX":0,"axe":[],"errors":["Failed to load resource: the server responded with a status of 404 (Not Found)","Failed to load resource: the server responded with a status of 404 (Not Found)","Failed to load resource: the server responded with a status of 404 (Not Found)","Failed to load resource: the server responded with a status of 404 (Not Found)","Failed to load resource: the server responded with a status of 404 (Not Found)"],"failed":["404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/01-nowoczesny.png","404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/02-ultranowoczesny.png","404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/03-tradycyjny.png","404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/04-dziedzictwo.png","404 http://127.0.0.1:51216/nsz-redesign-prototypes//assets/thumbs/05-awangardowy.png"],"external":[],"banner":true,"noindex":true}]
+[{"w":390,"overflowX":0,"axe":[],"errors":[],"failed":[],"external":[],"banner":true,"noindex":true},{"w":1440,"overflowX":0,"axe":[],"errors":[],"failed":[],"external":[],"banner":true,"noindex":true}]
