@@ -1,4 +1,4 @@
-# QA 2026-10-13T07:46:22.623Z
+# QA 2026-10-13T08:01:16.871Z
 Base: https://pflgroup.github.io/nsz-redesign-prototypes/
 
 ## 01-nowoczesny
@@ -52,7 +52,7 @@ Base: https://pflgroup.github.io/nsz-redesign-prototypes/
 - błędy konsoli: brak
 - nieudane zasoby: brak
 - zapytania zewnętrzne: brak
-- max elementów <24px: 5 (84 rocznica powstania NSZ 245x22; Zobacz rozdział 04 117x14; 80. rocznica defilady oddziału 398x22; 81. rocznica wydarzeń w Holisz 309x22; rozdział 04 69x14)
+- max elementów <24px: 5 (84 rocznica powstania NSZ 244x22; Zobacz rozdział 04 117x14; 80. rocznica defilady oddziału 397x22; 81. rocznica wydarzeń w Holisz 308x22; rozdział 04 69x14)
 - h1/strona: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 | przeskoki nagłówków: 0 | img bez alt: 0 | skip: true | baner: true | noindex: true
 - interakcje: {"variant":"05-awangardowy","menuOpens":true,"menuEscCloses":true,"firstTab":"Przejdź do treści","focusVisible":true,"emptyState":true,"afterClear":9,"filterReduces":"2/9","queryParam":1,"galleryNext":"0→1","galleryKeyboard":"0","toc":8,"progress":1,"internalLinks":18,"brokenLinks":[],"noJsItemsVisible":9,"noJsArticleWords":912,"reducedMotionClass":true,"zoom200overflow":46,"pageErrors":[]}
 
