@@ -1,0 +1,297 @@
+window.NSZ_CONTENT = {
+  "_meta": {
+    "generated": "2026-10-13",
+    "note": "Wspólny zestaw treści prototypów. Tytuły, daty, kategorie i adresy odczytane z WordPress REST API nsz.com.pl; zajawki napisane samodzielnie, nie kopiowane. Zdjęcia nie są dołączone (prawa niepotwierdzone).",
+    "source_api": "https://www.nsz.com.pl/wp-json/wp/v2/posts"
+  },
+  "organization": {
+    "name": "Związek Żołnierzy Narodowych Sił Zbrojnych",
+    "short": "ZŻNSZ",
+    "krs": "0000153859",
+    "nip": "527-172-52-61",
+    "regon": "010783448",
+    "address": "ul. 11 Listopada 17/19 lok. 115, 03-446 Warszawa",
+    "correspondence": "Skrytka pocztowa nr 34, ul. Gustawa Gizewiusza 6, 12-200 Pisz",
+    "email_board": "zgzznsz[at]gmail.com",
+    "email_editorial": "redakcja[at]nsz.com.pl",
+    "mission": "Organizacja kombatancka upamiętniająca żołnierzy podziemia narodowego; prowadzi działalność rocznicową, wydawniczą, archiwalną (Cyfrowe Archiwum) i edukacyjną (m.in. Akademia Kompetencji Cyfrowych dla seniorów 60+).",
+    "related_systems": [
+      {
+        "name": "Cyfrowe Archiwum ZŻNSZ",
+        "url": "https://archiwumcyfrowe.nsz.com.pl/"
+      },
+      {
+        "name": "Archiwalna witryna NSZ",
+        "url": "https://stara-strona.nsz.com.pl/"
+      }
+    ],
+    "source": "https://www.nsz.com.pl/kontakt/",
+    "accessed": "2026-10-13"
+  },
+  "items": [
+    {
+      "id": "84-rocznica",
+      "type": "aktualnosc",
+      "category": "Aktualności",
+      "title": "84 rocznica powstania NSZ",
+      "date": "2026-09-20",
+      "author": null,
+      "author_note": "W serwisie przypisane do konta redakcyjnego „Jaszczurka01”; tekst nie wskazuje autora z imienia i nazwiska.",
+      "place": "Kamesznica",
+      "url": "https://www.nsz.com.pl/84-rocznica-powstania-nsz/",
+      "summary": "Relacja z obchodów 84. rocznicy powstania NSZ w Kamesznicy. Związek informuje o przyznaniu mu przez IPN Złotego Medalu „Reipublicae Memoriae Meritum” oraz o liście Prezydenta RP skierowanym do uczestników.",
+      "tags": [
+        "rocznice",
+        "IPN",
+        "Kamesznica"
+      ],
+      "related": [
+        "kamesznica-cmentarz",
+        "defilada-wisla-80"
+      ]
+    },
+    {
+      "id": "kamesznica-cmentarz",
+      "type": "aktualnosc",
+      "category": "Aktualności",
+      "title": "Otwarcie cmentarza wojennego żołnierzy Narodowych Sił Zbrojnych w Kamesznicy",
+      "date": "2026-04-19",
+      "author": "Zarząd Okręgu Śląsk Cieszyński ZŻNSZ",
+      "author_note": "Podpis instytucjonalny na końcu tekstu.",
+      "place": "Kamesznica (pow. żywiecki)",
+      "url": "https://www.nsz.com.pl/otwarcia-cmentarza-wojennego-zolnierzy-narodowych-sil-zbrojnych-w-kamesznicy/",
+      "summary": "Zapowiedź uroczystości z 7 maja 2026 r.: pochówku szczątków żołnierzy zgrupowania kpt. Henryka Flamego „Bartka” i otwarcia cmentarza wojennego. Tekst podaje program dnia według informacji IPN.",
+      "tags": [
+        "pochówki",
+        "IPN",
+        "Bartek"
+      ],
+      "related": [
+        "demo-bartek",
+        "defilada-wisla-80"
+      ]
+    },
+    {
+      "id": "defilada-wisla-80",
+      "type": "wydarzenie",
+      "category": "Aktualności",
+      "title": "Uroczystości 80. rocznicy defilady żołnierzy Narodowych Sił Zbrojnych kpt. Henryka Flame ps. „Bartek” – Relacja",
+      "date": "2026-05-16",
+      "event_date": "2026-05-03",
+      "author": null,
+      "author_note": "Konto redakcyjne „Jaszczurka01”; brak podpisu autora.",
+      "place": "Wisła",
+      "url": "https://www.nsz.com.pl/uroczystosci-80-rocznicy-defilady-zolnierzy-narodowych-sil-zbrojnych-kpt-henryka-flame-ps-bartek-relacja/",
+      "summary": "Relacja z obchodów 3 maja 2026 r. w Wiśle, przypominających przemarsz oddziału „Bartka” przez miasto 3 maja 1946 r. Wpis wymienia współorganizatorów i przebieg uroczystości; zawiera rozbudowaną galerię.",
+      "tags": [
+        "rocznice",
+        "Bartek",
+        "Wisła"
+      ],
+      "related": [
+        "demo-bartek",
+        "kamesznica-cmentarz"
+      ]
+    },
+    {
+      "id": "holiszow-81",
+      "type": "wydarzenie",
+      "category": "Aktualności",
+      "title": "81. Rocznica wyzwolenia niemieckiego obozu koncentracyjnego dla kobiet w Holiszowie przez Brygadę Świętokrzyską Narodowych Sił Zbrojnych",
+      "date": "2026-05-06",
+      "event_date": "2026-05-05",
+      "author": null,
+      "author_note": "Konto redakcyjne „Jaszczurka01”; brak podpisu autora.",
+      "place": "Holiszów (Czechy)",
+      "url": "https://www.nsz.com.pl/81-rocznica-wyzwolenia-niemieckiego-obozu-koncentracyjnego-dla-kobiet-w-holiszowie-przez-brygade-swietokrzyska-narodowych-sil-zbrojnych/",
+      "summary": "Relacja z udziału delegacji Związku w obchodach w Holiszowie. Wpis przedstawia wydarzenia 5 maja 1945 r. z perspektywy Związku; ocena działań Brygady Świętokrzyskiej w 1945 r. jest przedmiotem sporu historiograficznego (zob. raport historyczny).",
+      "tags": [
+        "Brygada Świętokrzyska",
+        "rocznice"
+      ],
+      "editorial_flag": "Treść autoprezentacyjna — w prototypie wymaga odsyłacza do kontekstu źródłowego.",
+      "related": [
+        "nsz-1942-1946"
+      ]
+    },
+    {
+      "id": "nsz-1942-1946",
+      "type": "historia",
+      "category": "Artykuły i opracowania",
+      "title": "Narodowe Siły Zbrojne (1942–1946)",
+      "date": "2021-11-05",
+      "author": "Rafał Sierchuła (IPN Poznań)",
+      "author_note": "Przedruk z „Biuletynu IPN” nr 8–9/2007 — według adnotacji w tekście.",
+      "url": "https://www.nsz.com.pl/narodowe-sily-zbrojne-1942-1946/",
+      "summary": "Syntetyczny zarys historii NSZ: struktury polityczne (TNRP), dowództwo, Służba Cywilna Narodu, scalenie z AK i rozłam, losy powojenne. Dobry punkt wejścia, lecz jako jedno ujęcie — wymaga zestawienia z innymi opracowaniami.",
+      "tags": [
+        "synteza",
+        "struktury",
+        "IPN"
+      ],
+      "related": [
+        "nestorowicz",
+        "rozkaz-domana"
+      ]
+    },
+    {
+      "id": "nestorowicz",
+      "type": "biogram",
+      "category": "Życiorysy",
+      "title": "Ppłk Wacław Nestorowicz ps. „Kalina”",
+      "date": "2023-02-06",
+      "author": "Piotr Łapiński",
+      "author_note": "Przedruk z „Głosu znad Narwi” nr 2/2021 — według adnotacji w tekście.",
+      "url": "https://www.nsz.com.pl/pplk-waclaw-nestorowicz-ps-kalina/",
+      "summary": "Obszerny biogram komendanta Okręgu NSZ Białystok (ur. 1891). Autor odtwarza drogę życiową na podstawie zbiorów rodzinnych i archiwaliów IPN, wskazując luki w dotychczasowej wiedzy.",
+      "tags": [
+        "Białystok",
+        "Łomża",
+        "dowódcy"
+      ],
+      "related": [
+        "nsz-1942-1946"
+      ]
+    },
+    {
+      "id": "rozkaz-domana",
+      "type": "dokument",
+      "category": "Dokumenty",
+      "title": "Rozkaz płk. „Domana” komendanta głównego NZW",
+      "date": "2021-10-28",
+      "author": null,
+      "author_note": "Konto redakcyjne „Mario66”; brak podpisu autora wstępu i sygnatury archiwalnej dokumentu.",
+      "url": "https://www.nsz.com.pl/rozkaz-pplk-domana-komendanta-glownego-nzw/",
+      "summary": "Fragment rozkazu nr 312 z 22 lipca 1945 r. płk. Tadeusza Danilewicza, komendanta głównego NZW, z krótkim wstępem redakcyjnym. Dokument dotyczy NZW — formacji powołanej przez Stronnictwo Narodowe, odrębnej od NSZ.",
+      "tags": [
+        "NZW",
+        "1945",
+        "rozkazy"
+      ],
+      "editorial_flag": "Brak sygnatury archiwalnej — do uzupełnienia przed publikacją jako źródło.",
+      "related": [
+        "nsz-1942-1946"
+      ]
+    },
+    {
+      "id": "siedlce-1944",
+      "type": "historia",
+      "category": "Artykuły i opracowania",
+      "title": "Akcja odbicia oficerów NSZ z niemieckiego więzienia w Siedlcach",
+      "date": "2022-02-28",
+      "event_date": "1944-03-12",
+      "author": null,
+      "author_note": "Konto „Patrycja”; brak pełnego podpisu i bibliografii.",
+      "place": "Siedlce",
+      "url": "https://www.nsz.com.pl/akcja-odbicia-oficerow-nsz-z-niemieckiego-wiezienia-w-siedlcach/",
+      "summary": "Opis akcji z 12 marca 1944 r., w której oddział NSZ uwolnił członków sztabu Okręgu XII „Podlasie” aresztowanych przez Niemców. Tekst wymienia uczestników i odznaczenia, nie podaje jednak źródeł.",
+      "tags": [
+        "Podlasie",
+        "1944",
+        "akcje zbrojne"
+      ],
+      "related": [
+        "nsz-1942-1946"
+      ]
+    }
+  ],
+  "demo_article": {
+    "id": "demo-bartek",
+    "label": "Tekst demonstracyjny przygotowany do prototypu — nie jest publikacją ZŻNSZ",
+    "title": "Od operacji „Lawina” do Kamesznicy. Zgrupowanie kpt. Henryka Flamego „Bartka” i jego upamiętnienie",
+    "date": "2026-10-13",
+    "author": null,
+    "author_note": "Redakcja prototypu (opracowanie demonstracyjne na podstawie źródeł wymienionych niżej).",
+    "lead": "Osiemdziesiąt lat po likwidacji oddziałów żołnierze zgrupowania kpt. Henryka Flamego „Bartka” zostali pochowani na cmentarzu wojennym w Kamesznicy. Ich historia łączy powojenną konspirację, prowokację aparatu bezpieczeństwa i wieloletnie poszukiwania prowadzone przez Instytut Pamięci Narodowej.",
+    "sections": [
+      {
+        "heading": "Dowódca i oddział",
+        "paragraphs": [
+          "Henryk Flame urodził się w 1918 r. we Frysztacie na Zaolziu. Przed wojną i w czasie wojny był lotnikiem. Od lata 1945 do jesieni 1946 r. dowodził zgrupowaniem działającym na Podbeskidziu i Górnym Śląsku, opisywanym w publikacjach IPN jako największy oddział antykomunistycznego podziemia w tym regionie. Według ustaleń IPN pod jego dowództwem walczyło w tym czasie kilkuset partyzantów.",
+          "Obozowiska oddziału znajdowały się w rejonie Baraniej Góry. Najczęściej przywoływanym epizodem pozostaje zajęcie i przemarsz przez Wisłę 3 maja 1946 r., w rocznicę uchwalenia Konstytucji 3 Maja — święta, którego publiczne obchodzenie władze komunistyczne w tym czasie ograniczały."
+        ]
+      },
+      {
+        "heading": "Operacja „Lawina”",
+        "paragraphs": [
+          "Jesienią 1946 r. Urząd Bezpieczeństwa Publicznego przeprowadził operację o kryptonimie „Lawina”. Wykorzystując agenturę, funkcjonariusze zorganizowali rzekomy przerzut partyzantów na Zachód, do amerykańskiej strefy okupacyjnej. Według ustaleń IPN żołnierzy przewieziono na Opolszczyznę w kilku transportach i zamordowano; łączna liczba ofiar represji wobec zgrupowania przekracza sto osób.",
+          "Sam Flame ujawnił się w marcu 1947 r. w ramach amnestii. Zginął 1 grudnia 1947 r. w Zabrzegu, zastrzelony przez milicjanta. Został pochowany na cmentarzu parafialnym w Czechowicach."
+        ]
+      },
+      {
+        "heading": "Poszukiwania i identyfikacja",
+        "paragraphs": [
+          "Szczątki ofiar operacji „Lawina” odnaleziono w wyniku prac poszukiwawczych Biura Poszukiwań i Identyfikacji IPN na Opolszczyźnie. Część ofiar zidentyfikowano genetycznie; według komunikatu IPN spośród niemal 60 pochowanych w 2026 r. żołnierzy 25 znanych jest z imienia i nazwiska.",
+          "Budowę cmentarza wojennego w Kamesznicy rozpoczęto w 2022 r., a zakończono jesienią 2025 r. Centralnym elementem jest pięciometrowy pomnik z prześwitem w kształcie krzyża, przez który widać Baranią Górę — rejon dawnych obozowisk oddziału."
+        ]
+      },
+      {
+        "heading": "Pogrzeb 7 maja 2026 r.",
+        "paragraphs": [
+          "Uroczystości pogrzebowe połączono z otwarciem cmentarza. Wzięli w nich udział m.in. Prezydent RP, przedstawiciele IPN, rodziny poległych, organizacje kombatanckie i harcerze. Rodzinom zidentyfikowanych żołnierzy przekazano flagi państwowe.",
+          "Związek Żołnierzy NSZ zapowiadał uroczystość w swoim serwisie, a obchody 84. rocznicy powstania NSZ 20 września 2026 r. również odbyły się w Kamesznicy."
+        ]
+      },
+      {
+        "heading": "Słowniczek",
+        "paragraphs": [
+          "Urząd Bezpieczeństwa Publicznego (UBP) — terenowe struktury komunistycznego aparatu bezpieczeństwa, podległe Ministerstwu Bezpieczeństwa Publicznego; odpowiadały m.in. za zwalczanie podziemia niepodległościowego.",
+          "Amnestia z 1947 r. — ustawa z 22 lutego 1947 r., na mocy której członkowie podziemia mogli się „ujawnić”. Ujawnienie nie chroniło przed późniejszymi represjami, co w wielu biografiach z tego okresu jest wątkiem powracającym.",
+          "Biuro Poszukiwań i Identyfikacji IPN — komórka Instytutu Pamięci Narodowej prowadząca poszukiwania miejsc pochówku ofiar represji i identyfikację szczątków, m.in. metodami genetycznymi.",
+          "Narodowe Siły Zbrojne (NSZ) — formacja zbrojna podziemia narodowego, utworzona w 1942 r. Nie należy jej utożsamiać z Narodowym Zjednoczeniem Wojskowym (NZW), powołanym przez Stronnictwo Narodowe jesienią 1944 r. Oddział „Bartka” w literaturze określany jest jako zgrupowanie NSZ."
+        ]
+      },
+      {
+        "heading": "Jak czytać tę historię",
+        "paragraphs": [
+          "Materiał oparto przede wszystkim na komunikatach i publikacjach IPN oraz na serwisie dzieje.pl; relacje Związku Żołnierzy NSZ potraktowano jako źródło informacji o upamiętnieniu, a nie jako podstawę rekonstrukcji wydarzeń z lat 1945–1947.",
+          "Historia zgrupowania obejmuje także zagadnienia sporne, wymagające osobnego, źródłowego omówienia. Krótki tekst demonstracyjny ich nie rozstrzyga — odsyła do raportu historycznego projektu, bibliografii oraz do publikacji IPN wymienionych poniżej."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "IPN Katowice — Uroczystości pogrzebowe żołnierzy NSZ ze zgrupowania kpt. Henryka Flamego „Bartka”",
+        "url": "https://katowice.ipn.gov.pl/pl3/aktualnosci/241705,Uroczystosci-pogrzebowe-zolnierzy-NSZ-ze-zgrupowania-kpt-Henryka-Flamego-Bartka-.html",
+        "accessed": "2026-10-13"
+      },
+      {
+        "label": "IPN — „Wracają jako bohaterowie”",
+        "url": "https://ipn.gov.pl/pl/aktualnosci/241489,Wracaja-jako-bohaterowie.html",
+        "accessed": "2026-10-13"
+      },
+      {
+        "label": "IPN, wydawnictwo — „Poświęcić swe siły, majątek, a nawet życie. Henryk Flame „Bartek” i jego żołnierze” (e-book)",
+        "url": "https://ipn.gov.pl/pl/wydawnictwo/e-booki/241624,Poswiecic-swe-sily-majatek-a-nawet-zycie-Henryk-Flame-Bartek-i-jego-zolnierze.html",
+        "accessed": "2026-10-13"
+      },
+      {
+        "label": "dzieje.pl — materiały o Henryku Flamem (defilada w Wiśle, amnestia, śmierć w Zabrzegu)",
+        "url": "https://dzieje.pl/node/99089",
+        "accessed": "2026-10-13"
+      },
+      {
+        "label": "nsz.com.pl — Otwarcie cmentarza wojennego w Kamesznicy (autoprezentacja ZŻNSZ)",
+        "url": "https://www.nsz.com.pl/otwarcia-cmentarza-wojennego-zolnierzy-narodowych-sil-zbrojnych-w-kamesznicy/",
+        "accessed": "2026-10-13"
+      }
+    ],
+    "gallery": [
+      {
+        "placeholder": true,
+        "caption": "Miejsce na fotografię: cmentarz wojenny w Kamesznicy — do pozyskania od IPN lub ZŻNSZ wraz z licencją",
+        "alt": "Miejsce na fotografię cmentarza wojennego w Kamesznicy"
+      },
+      {
+        "placeholder": true,
+        "caption": "Miejsce na fotografię: rejon Baraniej Góry — zdjęcie krajobrazowe na wolnej licencji, do weryfikacji",
+        "alt": "Miejsce na fotografię Baraniej Góry"
+      },
+      {
+        "placeholder": true,
+        "caption": "Miejsce na reprodukcję dokumentu z zasobu Archiwum IPN — wymaga zgody i sygnatury",
+        "alt": "Miejsce na reprodukcję dokumentu archiwalnego"
+      }
+    ]
+  }
+};

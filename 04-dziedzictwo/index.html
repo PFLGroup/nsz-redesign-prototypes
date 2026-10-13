@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+  <link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dziedzictwo i Wspólnota — prototyp D | Związek Żołnierzy NSZ</title>
+<meta name="description" content="Prototyp koncepcyjny strony Związku Żołnierzy Narodowych Sił Zbrojnych — wariant D „Dziedzictwo i Wspólnota”. Nie jest oficjalnym serwisem.">
+<link rel="preload" href="fonts/eb-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/shared/a11y.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#tresc">Przejdź do treści</a>
+<div class="proto-banner" role="note"><strong>Prototyp koncepcyjny — nie jest oficjalnym serwisem.</strong> Wariant D „Dziedzictwo i Wspólnota”. Treści demonstracyjne; linki źródłowe prowadzą do nsz.com.pl. <a href="../index.html">Wszystkie warianty</a></div>
+
+<div class="utility">
+  <div class="wrap">
+    <a href="#organizacja">O Związku</a>
+    <a href="https://www.nsz.com.pl/kontakt/">Kontakt</a>
+    <a href="https://archiwumcyfrowe.nsz.com.pl/">Cyfrowe Archiwum ↗</a>
+    <button type="button" class="motion-btn" data-motion-toggle aria-pressed="false"><span data-motion-label>Animacje: włączone</span></button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="logo-ph" aria-hidden="true">[logo ZŻNSZ — oryginalny plik organizacji]</span>
+      <span class="brand-name">Związek Żołnierzy Narodowych Sił Zbrojnych<small>Pamięć · Źródła · Wspólnota</small></span>
+    </a>
+    <div class="head-actions">
+      <button type="button" class="icon-btn" data-disclosure aria-controls="szukaj">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span class="lbl-wide">Szukaj</span><span class="sr-only">w serwisie</span>
+      </button>
+      <button type="button" class="icon-btn menu-toggle" data-disclosure aria-controls="menu">
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        Menu
+      </button>
+    </div>
+    <nav class="mainnav" id="menu" aria-label="Główne">
+      <ul>
+        <li><a href="aktualnosci.html">Aktualności<span class="sub">uroczystości, komunikaty</span></a></li>
+        <li><a href="#sciezki">Historia<span class="sub">ścieżki i opracowania</span></a></li>
+        <li><a href="aktualnosci.html?kat=biogram">Ludzie<span class="sub">biogramy</span></a></li>
+        <li><a href="#miejsca">Miejsca pamięci<span class="sub">groby, pomniki, rocznice</span></a></li>
+        <li><a href="#zrodla">Źródła<span class="sub">dokumenty, archiwum</span></a></li>
+        <li><a href="#organizacja">Organizacja<span class="sub">Związek, kontakt</span></a></li>
+      </ul>
+    </nav>
+    <div class="search-panel" id="szukaj" data-quick-search data-list-href="aktualnosci.html">
+      <form role="search" action="aktualnosci.html" method="get">
+        <div style="flex:1 1 100%">
+          <label for="q-top">Szukaj w materiałach prototypu</label>
+        </div>
+        <input class="field" id="q-top" name="q" type="search" autocomplete="off" placeholder="np. Kamesznica, Siedlce, NZW">
+        <button class="btn" type="submit">Szukaj</button>
+      </form>
+      <p class="hint" data-results-status aria-live="polite"></p>
+      <ul class="results" data-results></ul>
+    </div>
+  </div>
+</header>
+
+<main id="tresc">
+
+  <!-- 1. Jedna opowieść z kontekstem (tekst obok obrazu) + ścieżka do aktualności -->
+  <section class="story" aria-labelledby="opowiesc-tytul">
+    <div class="wrap">
+      <figure>
+        <div class="ph">
+          <svg viewBox="0 0 400 500" role="img" aria-labelledby="ill1">
+            <title id="ill1">Ilustracja koncepcyjna: prześwit w kształcie krzyża w kamiennej ścianie, przez który widać linię gór</title>
+            <rect width="400" height="500" fill="#e2dbcb"/>
+            <g fill="none" stroke="#24412f" stroke-width="1.4" opacity=".55">
+              <path d="M0 330 C60 300 90 260 140 275 S230 215 270 235 S350 260 400 245"/>
+              <path d="M0 360 C70 340 120 315 170 322 S260 290 310 300 S370 312 400 305"/>
+              <path d="M0 390 C80 378 150 360 210 366 S320 352 400 350"/>
+            </g>
+            <path d="M170 80 h60 v110 h80 v60 h-80 v250 h-60 v-250 h-80 v-60 h80z" fill="#f3efe6" stroke="#b08d48" stroke-width="2"/>
+            <g fill="none" stroke="#24412f" stroke-width="2">
+              <path d="M170 300 C190 285 205 280 230 290"/>
+              <path d="M170 330 C195 318 210 318 230 322"/>
+            </g>
+          </svg>
+          <span class="ph-tag">Ilustracja koncepcyjna — nie fotografia</span>
+        </div>
+        <figcaption>Miejsce na fotografię cmentarza wojennego w Kamesznicy (do pozyskania od IPN lub ZŻNSZ z licencją). Pomnik ma prześwit w kształcie krzyża, przez który widać Baranią Górę — według komunikatu IPN.</figcaption>
+      </figure>
+      <div>
+        <p class="kicker">Opowieść · Kamesznica, Beskid Żywiecki</p>
+        <h1 id="opowiesc-tytul">Po osiemdziesięciu latach — pochówek żołnierzy zgrupowania „Bartka”</h1>
+        <p class="lede">7 maja 2026 r. w Kamesznicy pochowano szczątki niemal sześćdziesięciu żołnierzy zgrupowania kpt. Henryka Flamego „Bartka”, zamordowanych jesienią 1946 r. w operacji UBP o kryptonimie „Lawina”. Część z nich zidentyfikowało Biuro Poszukiwań i Identyfikacji IPN.</p>
+        <div class="actions">
+          <a class="btn" href="artykul.html">Przeczytaj opowieść</a>
+          <a class="btn ghost" href="#sciezka-bartek">Ścieżka: człowiek — miejsce — źródło — pamięć</a>
+        </div>
+        <section class="now" aria-labelledby="teraz">
+          <h2 id="teraz">Najnowsze w Związku</h2>
+          <ol>
+            <li><time datetime="2026-09-20">20 września 2026</time><a href="https://www.nsz.com.pl/84-rocznica-powstania-nsz/">84. rocznica powstania NSZ — obchody w Kamesznicy</a></li>
+            <li><time datetime="2026-05-16">16 maja 2026</time><a href="https://www.nsz.com.pl/uroczystosci-80-rocznicy-defilady-zolnierzy-narodowych-sil-zbrojnych-kpt-henryka-flame-ps-bartek-relacja/">80. rocznica defilady w Wiśle — relacja</a></li>
+          </ol>
+          <a class="all" href="aktualnosci.html">Wszystkie aktualności i wydarzenia →</a>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Trzy wejścia czasownikowe -->
+  <nav class="entries" aria-label="Jak zacząć">
+    <div class="wrap">
+      <ul>
+        <li><a href="#sciezki"><span class="verb">Poznaj <span aria-hidden="true">→</span></span><p>Zwięzłe wprowadzenie i ścieżki od losów jednego człowieka do szerszej historii.</p></a></li>
+        <li><a href="#miejsca"><span class="verb">Upamiętnij <span aria-hidden="true">→</span></span><p>Miejsca pamięci, rocznice i uroczystości z udziałem Związku.</p></a></li>
+        <li><a href="#zrodla"><span class="verb">Sięgnij do źródeł <span aria-hidden="true">→</span></span><p>Dokumenty, opracowania i Cyfrowe Archiwum — z opisem pochodzenia.</p></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 3. Element charakterystyczny: ścieżki pamięci -->
+  <section class="paths" id="sciezki" aria-labelledby="sciezki-tytul" data-paths>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Ścieżki pamięci</p>
+          <h2 id="sciezki-tytul">Człowiek — miejsce — źródło — pamięć</h2>
+        </div>
+        <p>Każda ścieżka zaczyna się od jednej biografii i prowadzi przez miejsce, dokument lub opracowanie do dzisiejszego upamiętnienia. Brakujące ogniwa pokazujemy otwarcie — to zadania dla redakcji, nie luki do wypełnienia domysłem.</p>
+      </div>
+
+      <div class="path-picker" role="group" aria-label="Wybierz ścieżkę" hidden>
+        <button type="button" class="path-btn" data-path="sciezka-bartek" aria-controls="sciezka-bartek">kpt. Henryk Flame „Bartek”<small>Podbeskidzie, 1945–1946</small></button>
+        <button type="button" class="path-btn" data-path="sciezka-opoka" aria-controls="sciezka-opoka">ks. mjr Rudolf Marszałek „Opoka”<small>duszpasterz VII Okręgu NSZ</small></button>
+        <button type="button" class="path-btn" data-path="sciezka-kalina" aria-controls="sciezka-kalina">ppłk Wacław Nestorowicz „Kalina”<small>Okręg NSZ Białystok</small></button>
+      </div>
+      <p class="sr-only" aria-live="polite" data-path-live></p>
+
+      <article class="path" id="sciezka-bartek">
+        <h3 class="path-title" tabindex="-1">Ścieżka: kpt. Henryk Flame „Bartek”</h3>
+        <ol class="stations">
+          <li class="station"><span class="dot" aria-hidden="true">I</span><h4>Człowiek</h4>
+            <p class="name">Henryk Flame (1918–1947)</p>
+            <p>Lotnik, od lata 1945 do jesieni 1946 r. dowódca zgrupowania na Podbeskidziu i Górnym Śląsku. Zginął w Zabrzegu 1 grudnia 1947 r.</p>
+            <p class="src">Źródło: IPN, dzieje.pl</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">II</span><h4>Miejsce</h4>
+            <p class="name">Wisła i Barania Góra</p>
+            <p>Obozowiska w rejonie Baraniej Góry; 3 maja 1946 r. przemarsz oddziału przez Wisłę.</p>
+            <p class="src">Źródło: dzieje.pl</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">III</span><h4>Źródło</h4>
+            <p class="name">E-book IPN o „Bartku” i jego żołnierzach</p>
+            <p><a href="https://ipn.gov.pl/pl/wydawnictwo/e-booki/241624,Poswiecic-swe-sily-majatek-a-nawet-zycie-Henryk-Flame-Bartek-i-jego-zolnierze.html">„Poświęcić swe siły, majątek, a nawet życie…” — wydawnictwo IPN ↗</a></p>
+            <p class="src">Rodzaj: opracowanie instytucji naukowej</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">IV</span><h4>Pamięć</h4>
+            <p class="name">Cmentarz wojenny w Kamesznicy</p>
+            <p>Pochówek 7 maja 2026 r.; tam też obchody 84. rocznicy powstania NSZ (20 IX 2026).</p>
+            <p><a href="artykul.html">Opowieść demonstracyjna →</a></p></li>
+        </ol>
+        <p class="path-foot"><span>Powiązane: <a href="aktualnosci.html?q=Bartek">materiały o „Bartku”</a></span><span>Stan weryfikacji: wszystkie ogniwa potwierdzone w źródłach zewnętrznych</span></p>
+      </article>
+
+      <article class="path" id="sciezka-opoka">
+        <h3 class="path-title" tabindex="-1">Ścieżka: ks. mjr Rudolf Marszałek „Opoka”</h3>
+        <ol class="stations">
+          <li class="station"><span class="dot" aria-hidden="true">I</span><h4>Człowiek</h4>
+            <p class="name">ks. Rudolf Marszałek (ur. 1911)</p>
+            <p>Kapelan oddziałów AK, od lipca 1945 r. duszpasterz VII Okręgu Śląskiego NSZ. Aresztowany 12 grudnia 1946 r., stracony 10 marca 1948 r.</p>
+            <p class="src">Źródło: dzieje.pl (M. Szafrański, 2019)</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">II</span><h4>Miejsce</h4>
+            <p class="name">Bystra</p>
+            <p>Miejscowość, w której w 2019 r. upamiętniono kapelana.</p>
+            <p class="src">Źródło: dzieje.pl</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">III</span><h4>Źródło</h4>
+            <p class="name">„W Bystrej upamiętniono ks. mjr. Rudolfa Marszałka”</p>
+            <p><a href="https://dzieje.pl/node/101936">dzieje.pl, 10.03.2019 ↗</a></p>
+            <p class="src">Rodzaj: serwis historyczny (relacja)</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">IV</span><h4>Pamięć</h4>
+            <p class="name">Kapelani NSZ — temat do opracowania</p>
+            <p class="gap">Innych kapelanów nie wymieniamy: ich nazwiska nie zostały w projekcie zweryfikowane. Opracowanie ZŻNSZ z 2000 r. czeka na odczytanie.</p></li>
+        </ol>
+        <p class="path-foot"><span>Stan weryfikacji: ogniwa I–III potwierdzone w jednym źródle; ogniwo IV otwarte</span></p>
+      </article>
+
+      <article class="path" id="sciezka-kalina">
+        <h3 class="path-title" tabindex="-1">Ścieżka: ppłk Wacław Nestorowicz „Kalina”</h3>
+        <ol class="stations">
+          <li class="station"><span class="dot" aria-hidden="true">I</span><h4>Człowiek</h4>
+            <p class="name">Wacław Nestorowicz (ur. 1891)</p>
+            <p>Komendant Okręgu NSZ Białystok. Jego biogram odtworzono na podstawie zbiorów rodzinnych i archiwaliów IPN; autor wskazuje luki w wiedzy.</p>
+            <p class="src">Źródło: biogram P. Łapińskiego</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">II</span><h4>Miejsce</h4>
+            <p class="name">Białystok i Łomża</p>
+            <p>Teren Okręgu NSZ, którym dowodził.</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">III</span><h4>Źródło</h4>
+            <p class="name">Biogram w serwisie Związku</p>
+            <p><a href="https://www.nsz.com.pl/pplk-waclaw-nestorowicz-ps-kalina/">nsz.com.pl — przedruk z „Głosu znad Narwi” nr 2/2021 ↗</a></p>
+            <p class="src">Rodzaj: opracowanie popularne, przedruk</p></li>
+          <li class="station"><span class="dot" aria-hidden="true">IV</span><h4>Pamięć</h4>
+            <p class="name">Brak zweryfikowanego wpisu</p>
+            <p class="gap">W zestawie prototypu nie ma potwierdzonej informacji o upamiętnieniu. Redakcja może tu dodać miejsce, tablicę lub grób — z dokumentacją.</p></li>
+        </ol>
+        <p class="path-foot"><span>Stan weryfikacji: ogniwa I–III z jednego opracowania; ogniwo IV otwarte</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. Miejsca pamięci: aktualności i wydarzenia jako mozaika miejsc -->
+  <section class="places" id="miejsca" aria-labelledby="miejsca-tytul">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Aktualności i wydarzenia</p>
+          <h2 id="miejsca-tytul">Miejsca, w których dziś pamiętamy</h2>
+        </div>
+        <p>Relacje z uroczystości porządkujemy według miejsc. Daty publikacji pochodzą z serwisu Związku; teksty są autoprezentacją organizacji.</p>
+      </div>
+      <ul class="mosaic">
+        <li>
+          <div class="ph" role="img" aria-label="Miejsce na fotografię z uroczystości w Kamesznicy"><span class="ph-tag">Miejsce na fotografię — prawa do ustalenia</span></div>
+          <p class="place">Kamesznica</p>
+          <p class="meta"><time datetime="2026-04-19">19 kwietnia 2026</time> · Zarząd Okręgu Śląsk Cieszyński ZŻNSZ</p>
+          <h3><a href="https://www.nsz.com.pl/otwarcia-cmentarza-wojennego-zolnierzy-narodowych-sil-zbrojnych-w-kamesznicy/">Otwarcie cmentarza wojennego żołnierzy NSZ w Kamesznicy</a></h3>
+          <p>Zapowiedź uroczystości z 7 maja 2026 r. — pochówku żołnierzy zgrupowania „Bartka” i otwarcia cmentarza; program dnia według informacji IPN.</p>
+        </li>
+        <li>
+          <p class="place">Wisła</p>
+          <p class="meta">Wydarzenie <time datetime="2026-05-03">3 maja 2026</time> · relacja z 16 maja</p>
+          <h3><a href="https://www.nsz.com.pl/uroczystosci-80-rocznicy-defilady-zolnierzy-narodowych-sil-zbrojnych-kpt-henryka-flame-ps-bartek-relacja/">80. rocznica defilady oddziału „Bartka”</a></h3>
+          <p>Obchody przypominające przemarsz przez miasto 3 maja 1946 r.</p>
+        </li>
+        <li>
+          <p class="place">Holiszów</p>
+          <p class="meta">Wydarzenie <time datetime="2026-05-05">5 maja 2026</time> · Czechy</p>
+          <h3><a href="https://www.nsz.com.pl/81-rocznica-wyzwolenia-niemieckiego-obozu-koncentracyjnego-dla-kobiet-w-holiszowie-przez-brygade-swietokrzyska-narodowych-sil-zbrojnych/">81. rocznica wyzwolenia obozu dla kobiet w Holiszowie</a></h3>
+          <p class="flag">Kontekst: wydarzenia z 5 maja 1945 r. są potwierdzone; ocena działań Brygady Świętokrzyskiej w 1945 r. i liczba uwolnionych więźniarek są przedmiotem sporu historyków.</p>
+        </li>
+        <li>
+          <p class="place">Siedlce</p>
+          <p class="meta">Wydarzenie historyczne <time datetime="1944-03-12">12 marca 1944</time></p>
+          <h3><a href="https://www.nsz.com.pl/akcja-odbicia-oficerow-nsz-z-niemieckiego-wiezienia-w-siedlcach/">Odbicie oficerów NSZ z niemieckiego więzienia</a></h3>
+          <p class="flag">Tekst w serwisie nie podaje źródeł — do uzupełnienia.</p>
+        </li>
+      </ul>
+      <p class="more"><a class="btn ghost" href="aktualnosci.html">Wszystkie aktualności</a></p>
+    </div>
+  </section>
+
+  <!-- 5. Źródło + biogram + kalendarz pamięci -->
+  <section class="sources" id="zrodla" aria-labelledby="zrodla-tytul">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Ze źródeł</p>
+          <h2 id="zrodla-tytul">Dokument, opracowanie, życiorys</h2>
+        </div>
+        <p>Przy każdym materiale mówimy, czym jest i skąd pochodzi. Dokument to nie to samo co opracowanie, a wspomnienie to nie to samo co ustalenie historyka.</p>
+      </div>
+      <div class="duo">
+        <article class="doc" aria-labelledby="doc-t">
+          <div class="ph" role="img" aria-label="Miejsce na reprodukcję dokumentu"><span class="ph-tag">Reprodukcja — wymaga sygnatury</span></div>
+          <div>
+            <p class="kicker">Dokument · NZW</p>
+            <h3 id="doc-t"><a href="https://www.nsz.com.pl/rozkaz-pplk-domana-komendanta-glownego-nzw/">Rozkaz płk. „Domana”, komendanta głównego NZW</a></h3>
+            <p>Fragment rozkazu nr 312 z 22 lipca 1945 r. płk. Tadeusza Danilewicza z krótkim wstępem redakcyjnym.</p>
+            <dl>
+              <dt>Formacja</dt><dd>Narodowe Zjednoczenie Wojskowe — powołane przez Stronnictwo Narodowe, odrębne od NSZ</dd>
+              <dt>Data</dt><dd>22 lipca 1945</dd>
+              <dt>Publikacja</dt><dd>nsz.com.pl, 28 października 2021</dd>
+            </dl>
+            <p class="note">Brak sygnatury archiwalnej — do uzupełnienia, zanim materiał zostanie opisany jako źródło.</p>
+          </div>
+        </article>
+        <div>
+          <article class="bio" aria-labelledby="bio-t">
+            <p class="kicker">Opracowanie</p>
+            <h3 id="bio-t"><a href="https://www.nsz.com.pl/narodowe-sily-zbrojne-1942-1946/">Narodowe Siły Zbrojne (1942–1946)</a></h3>
+            <blockquote><p>Syntetyczny zarys: struktury polityczne, dowództwo, scalenie z AK i rozłam w 1944 r., losy powojenne.</p></blockquote>
+            <p>Rafał Sierchuła (IPN Poznań), przedruk z „Biuletynu IPN” nr 8–9/2007. Dobry punkt wejścia — jedno z kilku ujęć, które warto zestawić z innymi.</p>
+          </article>
+          <h3>Kalendarz pamięci</h3>
+          <ol class="calendar">
+            <li><b>20 IX 1942</b><span>Rozkaz nr 1/42 płk. Ignacego Oziewicza — powstanie NSZ</span></li>
+            <li><b>7 III 1944</b><span>Umowa scaleniowa z AK; rozłam na NSZ-AK i NSZ-ZJ</span></li>
+            <li><b>3 V 1946</b><span>Przemarsz oddziału „Bartka” przez Wisłę</span></li>
+            <li><b>10 III 1948</b><span>Stracony ks. mjr Rudolf Marszałek „Opoka”</span></li>
+            <li><b>1 III</b><span>Narodowy Dzień Pamięci „Żołnierzy Wyklętych” (ustawa z 3 II 2011)</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Organizacja -->
+  <section class="org" id="organizacja" aria-labelledby="org-tytul">
+    <div class="wrap cols">
+      <div>
+        <h2 id="org-tytul">Związek Żołnierzy NSZ</h2>
+        <p>Organizacja kombatancka upamiętniająca żołnierzy podziemia narodowego. Prowadzi działalność rocznicową, wydawniczą, archiwalną i edukacyjną — m.in. Cyfrowe Archiwum oraz Akademię Kompetencji Cyfrowych dla seniorów 60+.</p>
+        <p>Związek jest współczesnym stowarzyszeniem. Jego działalność opisujemy osobno od historii NSZ z lat 1942–1947.</p>
+        <p><a class="btn" href="https://www.nsz.com.pl/wspieram-zznsz/">Wesprzyj Związek (serwis ZŻNSZ)</a></p>
+      </div>
+      <div>
+        <h3 style="color:#fff">Dane i kontakt</h3>
+        <dl>
+          <dt>Siedziba</dt><dd>ul. 11 Listopada 17/19 lok. 115, 03-446 Warszawa</dd>
+          <dt>KRS</dt><dd>0000153859</dd>
+          <dt>Redakcja</dt><dd>redakcja[at]nsz.com.pl</dd>
+          <dt>Archiwum</dt><dd><a href="https://archiwumcyfrowe.nsz.com.pl/">archiwumcyfrowe.nsz.com.pl ↗</a></dd>
+        </dl>
+      </div>
+      <div>
+        <h3 style="color:#fff">Powiadomienia o rocznicach</h3>
+        <form data-demo-form>
+          <label for="mail-d">Adres e-mail (demonstracja)</label>
+          <input class="field" id="mail-d" type="email" autocomplete="off" placeholder="nie wpisuj prawdziwego adresu">
+          <p style="margin-top:10px"><button class="btn" type="submit">Zapisz (demo)</button></p>
+          <p class="demo-msg" data-demo-msg aria-live="polite">Formularz demonstracyjny — nie wysyła ani nie zapisuje danych.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Prototyp koncepcyjny wariantu D — nie jest oficjalnym serwisem ZŻNSZ. Tytuły i daty z nsz.com.pl (odczyt 13.10.2026); zajawki własne.</p>
+    <p><a href="../index.html">← Wybór wariantów</a> · <a href="NOTES.md">Notatki projektowe</a></p>
+  </div>
+</footer>
+
+<script src="../assets/data/content.js"></script>
+<script src="../assets/shared/proto.js"></script>
+<script src="d.js"></script>
+</body>
+</html>
