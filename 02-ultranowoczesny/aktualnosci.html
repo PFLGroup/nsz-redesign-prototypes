@@ -43,6 +43,7 @@
     <ul class="search-results" data-results></ul>
   </div>
 </header>
+<script>/* Wczesne zwinięcie paneli nagłówka (ten sam stan, który ustawia proto.js) — zapobiega przesunięciu układu. */document.documentElement.classList.add("js");document.querySelectorAll("[data-disclosure]").forEach(function(b){var p=document.getElementById(b.getAttribute("aria-controls"));if(p){p.hidden=true;b.setAttribute("aria-expanded","false");}});</script>
 <main id="tresc" class="news-main">
 <nav class="crumbs" aria-label="Okruszki"><ol><li><a href="index.html">Strona główna</a></li><li><span aria-current="page">Aktualności i materiały</span></li></ol></nav>
 <div class="news-layout" data-filter-scope>

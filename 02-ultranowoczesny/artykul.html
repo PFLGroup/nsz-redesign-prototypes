@@ -44,6 +44,7 @@
   </div>
 </header>
 <div class="progress" aria-hidden="true"><div class="progress-bar" data-reading-progress></div></div>
+<script>/* Wczesne zwinięcie paneli nagłówka (ten sam stan, który ustawia proto.js) — zapobiega przesunięciu układu. */document.documentElement.classList.add("js");document.querySelectorAll("[data-disclosure]").forEach(function(b){var p=document.getElementById(b.getAttribute("aria-controls"));if(p){p.hidden=true;b.setAttribute("aria-expanded","false");}});</script>
 <main id="tresc" class="article-main">
 <nav class="crumbs" aria-label="Okruszki"><ol><li><a href="index.html">Strona główna</a></li><li><a href="aktualnosci.html">Aktualności i materiały</a></li><li><span aria-current="page">Zgrupowanie „Bartka”</span></li></ol></nav>
 <article class="article">

@@ -94,6 +94,7 @@
   </div>
 </div>
 <div class="progress" data-reading-progress role="progressbar" aria-label="Postęp czytania" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<script>/* Wczesne zwinięcie paneli nagłówka (ten sam stan, który ustawia proto.js) — zapobiega przesunięciu układu. */document.documentElement.classList.add("js");document.querySelectorAll("[data-disclosure]").forEach(function(b){var p=document.getElementById(b.getAttribute("aria-controls"));if(p){p.hidden=true;b.setAttribute("aria-expanded","false");}});</script>
 <main id="tresc">
 <header class="article-head">
   <div class="wrap">

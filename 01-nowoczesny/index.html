@@ -93,6 +93,7 @@
     </form>
   </div>
 </div>
+<script>/* Wczesne zwinięcie paneli nagłówka (ten sam stan, który ustawia proto.js) — zapobiega przesunięciu układu. */document.documentElement.classList.add("js");document.querySelectorAll("[data-disclosure]").forEach(function(b){var p=document.getElementById(b.getAttribute("aria-controls"));if(p){p.hidden=true;b.setAttribute("aria-expanded","false");}});</script>
 <main id="tresc">
 <section class="identity wrap" aria-label="O serwisie">
   <h1><strong>Związek Żołnierzy Narodowych Sił Zbrojnych</strong> — historia formacji, źródła i bieżąca działalność Związku w jednym miejscu.</h1>
