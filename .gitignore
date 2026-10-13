@@ -1,0 +1,8 @@
+node_modules/
+tests/node_modules/
+work/raw/
+work/bench-html/
+work/screens/
+work/qa/screens/
+.env
+*.log

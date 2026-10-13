@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="data:,">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>NSZ — pięć prototypów strony</title>
+  <meta name="description" content="Prototyp koncepcyjny modernizacji serwisu nsz.com.pl: pięć kierunków projektowych do porównania. Nie jest oficjalnym serwisem.">
+  <link rel="stylesheet" href="assets/shared/a11y.css">
+  <style>
+    :root {
+      --bg: #f4f3f0; --ink: #16181d; --muted: #4f535c; --line: #d6d3cc;
+      --card: #ffffff; --accent: #ad2727; --focus: #0b57d0;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+    header.top { padding: 48px 0 32px; border-bottom: 1px solid var(--line); }
+    .eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 12px; }
+    h1 { font-size: clamp(30px, 5vw, 52px); line-height: 1.08; margin: 0 0 16px; letter-spacing: -.02em; max-width: 18ch; }
+    .lead { font-size: 19px; color: var(--muted); max-width: 62ch; margin: 0; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 24px 0 0; padding: 0; list-style: none; font-size: 15px; color: var(--muted); }
+    main { padding: 40px 0 64px; }
+    .grid { display: grid; gap: 28px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); list-style: none; margin: 0; padding: 0; }
+    .v { background: var(--card); border: 1px solid var(--line); display: flex; flex-direction: column; }
+    .v figure { margin: 0; aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--line); background: #e9e7e2; }
+    .v figure img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block;
+      transition: transform 240ms ease-out; }
+    .v:hover figure img { transform: scale(1.02); }
+    .v .body { padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .v .num { font: 700 13px/1 ui-monospace, Consolas, monospace; color: var(--accent); letter-spacing: .08em; }
+    .v h2 { margin: 0; font-size: 24px; line-height: 1.2; }
+    .v h2 a { text-decoration: none; }
+    .v h2 a::after { content: ""; position: absolute; inset: 0; }
+    .v { position: relative; }
+    .v p { margin: 0; color: var(--muted); font-size: 16px; }
+    .views { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 8px; position: relative; z-index: 1; }
+    .views a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--ink);
+      text-decoration: none; font-size: 15px; font-weight: 600; background: var(--card); transition: background-color 160ms, color 160ms; }
+    .views a:hover { background: var(--ink); color: #fff; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; list-style: none; }
+    .tags li { font-size: 13px; border: 1px solid var(--line); padding: 2px 8px; color: var(--muted); }
+    section.docs { margin-top: 56px; border-top: 1px solid var(--line); padding-top: 32px; }
+    section.docs h2 { font-size: 26px; margin: 0 0 16px; }
+    .docs ul { columns: 2 300px; padding-left: 20px; margin: 0; }
+    .docs li { margin: 0 0 8px; break-inside: avoid; }
+    .docs a { display: inline-block; min-height: 24px; }
+    .note { margin-top: 32px; padding: 16px 20px; border-left: 4px solid var(--accent); background: var(--card); color: var(--muted); font-size: 15px; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 14px; color: var(--muted); }
+    @media (prefers-reduced-motion: reduce) { .v figure img { transition: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#warianty">Przejdź do wariantów</a>
+  <div class="proto-banner" role="note"><strong>Prototyp koncepcyjny — nie jest oficjalnym serwisem.</strong>
+    Projekt studyjny modernizacji nsz.com.pl; treści demonstracyjne, źródła w raportach.</div>
+  <header class="top">
+    <div class="wrap">
+      <p class="eyebrow">Modernizacja serwisu nsz.com.pl · październik 2026</p>
+      <h1>Pięć kierunków nowej strony Związku Żołnierzy NSZ</h1>
+      <p class="lead">Każdy wariant to osobny, działający prototyp: strona główna, lista aktualności z filtrami i przykładowy artykuł z galerią. Wszystkie korzystają z tego samego zestawu ośmiu zweryfikowanych materiałów, aby porównanie dotyczyło projektu, a nie treści.</p>
+      <ul class="meta">
+        <li>8 materiałów źródłowych z nsz.com.pl (odczyt 13.10.2026)</li>
+        <li>Zdjęcia i logo zastąpione oznaczonymi miejscami — prawa do ustalenia</li>
+        <li>Bez analityki, ciasteczek i zewnętrznych zasobów</li>
+      </ul>
+    </div>
+  </header>
+  <main id="warianty" tabindex="-1">
+    <div class="wrap">
+      <ul class="grid">
+        <li class="v">
+          <figure><img src="assets/thumbs/01-nowoczesny.jpg" alt="" width="1440" height="900" loading="lazy"></figure>
+          <div class="body">
+            <span class="num">A · 01</span>
+            <h2><a href="01-nowoczesny/index.html">Instytucja 2.0</a></h2>
+            <p>Nowoczesny portal redakcyjny: ciepła biel, grafit i karmin, asymetryczny temat dnia oraz indeks tematów łączący bieżące wiadomości z kontekstem historycznym.</p>
+            <ul class="tags"><li>bezszeryfowy</li><li>indeks tematów</li><li>kalendarz rocznic</li></ul>
+            <div class="views">
+              <a href="01-nowoczesny/aktualnosci.html">Aktualności</a>
+              <a href="01-nowoczesny/artykul.html">Artykuł</a>
+              <a href="01-nowoczesny/historia.html">Historia</a>
+            </div>
+          </div>
+        </li>
+        <li class="v">
+          <figure><img src="assets/thumbs/02-ultranowoczesny.jpg" alt="" width="1440" height="900" loading="lazy"></figure>
+          <div class="body">
+            <span class="num">B · 02</span>
+            <h2><a href="02-ultranowoczesny/index.html">Żywe Archiwum</a></h2>
+            <p>Eksploracja zamiast banera: wybór „czas / miejsca / ludzie / dokumenty”, oś czasu z 45 punktami, źródłami i statusem wiarygodności oraz równoważny widok listy.</p>
+            <ul class="tags"><li>atramentowy granat</li><li>eksplorator powiązań</li><li>jasny tryb czytania</li></ul>
+            <div class="views">
+              <a href="02-ultranowoczesny/aktualnosci.html">Aktualności</a>
+              <a href="02-ultranowoczesny/artykul.html">Artykuł</a>
+            </div>
+          </div>
+        </li>
+        <li class="v">
+          <figure><img src="assets/thumbs/03-tradycyjny.jpg" alt="" width="1440" height="900" loading="lazy"></figure>
+          <div class="body">
+            <span class="num">C · 03</span>
+            <h2><a href="03-tradycyjny/index.html">Kronika Niepodległości</a></h2>
+            <p>Tradycyjny układ gazetowy na papierowym tle: szeryfowe nagłówki, cienkie linie, rozkładówka numeru (aktualność + dokument + komentarz) i kalendarium „Tego dnia”.</p>
+            <ul class="tags"><li>szeryfowy</li><li>rozkładówka numeru</li><li>kalendarium</li></ul>
+            <div class="views">
+              <a href="03-tradycyjny/aktualnosci.html">Aktualności</a>
+              <a href="03-tradycyjny/artykul.html">Artykuł</a>
+            </div>
+          </div>
+        </li>
+        <li class="v">
+          <figure><img src="assets/thumbs/04-dziedzictwo.jpg" alt="" width="1440" height="900" loading="lazy"></figure>
+          <div class="body">
+            <span class="num">D · 04</span>
+            <h2><a href="04-dziedzictwo/index.html">Dziedzictwo i Wspólnota</a></h2>
+            <p>Spokojna kompozycja na kamiennym tle z ciemną zielenią: jedna opowieść na pierwszym ekranie i ścieżki „człowiek — miejsce — źródło — pamięć” z jawnym stanem weryfikacji.</p>
+            <ul class="tags"><li>szeryf + krój użytkowy</li><li>ścieżki pamięci</li><li>miejsca</li></ul>
+            <div class="views">
+              <a href="04-dziedzictwo/aktualnosci.html">Aktualności</a>
+              <a href="04-dziedzictwo/artykul.html">Artykuł</a>
+            </div>
+          </div>
+        </li>
+        <li class="v">
+          <figure><img src="assets/thumbs/05-awangardowy.jpg" alt="" width="1440" height="900" loading="lazy"></figure>
+          <div class="body">
+            <span class="num">E · 05</span>
+            <h2><a href="05-awangardowy/index.html">Archiwum Awangardowe</a></h2>
+            <p>Radykalna forma graficzna — czerń, złamana biel i dozowana czerwień, monumentalne numery rozdziałów i edytorski montaż materiałów. Radykalność dotyczy kompozycji, nie przekazu.</p>
+            <ul class="tags"><li>plakatowa typografia</li><li>spis rozdziałów</li><li>montaż edytorski</li></ul>
+            <div class="views">
+              <a href="05-awangardowy/aktualnosci.html">Aktualności</a>
+              <a href="05-awangardowy/artykul.html">Artykuł</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <section class="docs" aria-labelledby="docs-title">
+        <h2 id="docs-title">Dokumentacja projektu</h2>
+        <ul>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/audit.md">Audyt obecnego serwisu</a></li>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/cms-recommendation.md">Identyfikacja CMS i rekomendacja produkcyjna</a></li>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/history-and-ideology.md">Rys historyczny i ideowy NSZ</a></li>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/sources.csv">Rejestr twierdzeń i źródeł</a></li>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/benchmarks.md">Benchmarki serwisów instytucji</a></li>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/design-comparison.md">Porównanie pięciu wariantów</a></li>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/qa.md">Wyniki testów</a></li>
+          <li><a href="https://github.com/PFLGroup/nsz-redesign-prototypes/blob/main/reports/assets-register.md">Rejestr zasobów i licencji</a></li>
+        </ul>
+        <p class="note">Nazwy kierunków („tradycyjny”, „katolicko-narodowy kontekst dziedzictwa”, „kontekst narodowo-radykalny”) opisują historyczny kontekst i estetykę, a nie program polityczny. Trudne i sporne wątki historii NSZ są w prototypach oznaczone i odesłane do źródeł. Formularze są demonstracyjne i nie wysyłają danych.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">Prototyp koncepcyjny — nie jest oficjalnym serwisem Związku Żołnierzy NSZ. Tytuły, daty i adresy materiałów pochodzą z nsz.com.pl; zajawki i tekst artykułu przykładowego przygotowano na potrzeby prototypu.</div>
+  </footer>
+</body>
+</html>

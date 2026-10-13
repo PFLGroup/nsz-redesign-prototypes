@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Kronika — strona główna · Wariant C · Prototyp ZŻNSZ</title>
+<meta name="description" content="Prototyp koncepcyjny strony głównej serwisu Związku Żołnierzy NSZ — wariant C „Kronika Niepodległości”.">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/playfair-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/shared/a11y.css">
+<link rel="stylesheet" href="kronika.css">
+</head>
+<body>
+<a class="skip-link" href="#tresc">Przejdź do treści</a>
+<div class="proto-banner" role="note"><strong>Prototyp koncepcyjny — nie jest oficjalnym serwisem.</strong> Wariant C „Kronika Niepodległości”. Zajawki napisała redakcja prototypu; tytuły, daty i linki źródłowe pochodzą z nsz.com.pl. <a href="../index.html">Wróć do wyboru wariantów</a></div>
+
+<header class="masthead">
+  <div class="wrap topline">
+    <p>Wydanie internetowe · <time datetime="2026-10-13">wtorek, 13 października 2026</time></p>
+    <div class="tools">
+      <button type="button" class="btn-text" data-motion-toggle aria-pressed="false"><span data-motion-label>Animacje: włączone</span></button>
+      <a href="#zwiazek">Kontakt</a>
+    </div>
+  </div>
+  <div class="wrap nameplate">
+    <p class="ear"><strong>Pamięć · źródła · działalność</strong>Serwis organizacji kombatanckiej upamiętniającej żołnierzy podziemia narodowego.</p>
+    <h1 class="brand-h1"><a class="brand" href="index.html">
+      <span class="logo-ph" aria-hidden="true">[logo ZŻNSZ — oryginalny plik organizacji]</span>
+      <span class="brand-sub">Serwis Związku</span>
+      <span class="brand-name">Związek Żołnierzy<br>Narodowych Sił Zbrojnych</span>
+    </a></h1>
+    <form class="search" role="search" action="aktualnosci.html" data-quick-search data-list-href="aktualnosci.html">
+      <label for="szukaj">Szukaj w kronice</label>
+      <div class="row">
+        <input id="szukaj" name="q" type="search" autocomplete="off" placeholder="np. Kamesznica, NZW">
+        <button class="btn btn--solid" type="submit">Szukaj</button>
+      </div>
+      <p class="sr-only" data-results-status aria-live="polite"></p>
+      <ul data-results></ul>
+    </form>
+  </div>
+  <div class="wrap"><hr class="nameplate-rule" aria-hidden="true"></div>
+  <nav class="dzialy" aria-label="Działy serwisu">
+    <div class="wrap dzialy-inner">
+      <ul>
+        <li><a href="aktualnosci.html?kat=aktualnosc">Aktualności</a></li>
+        <li><a href="aktualnosci.html?kat=historia">Historia</a></li>
+        <li><a href="aktualnosci.html?kat=biogram">Ludzie</a></li>
+        <li><a href="aktualnosci.html?kat=dokument">Dokumenty</a></li>
+        <li><a href="aktualnosci.html?kat=wydarzenie">Wydarzenia</a></li>
+        <li><a href="#archiwum">Archiwum</a></li>
+        <li><a href="#zwiazek">O Związku</a></li>
+      </ul>
+      <button type="button" class="btn indeks-btn" data-disclosure aria-controls="indeks">Indeks działów i tematów <span class="chev" aria-hidden="true">▾</span></button>
+    </div>
+  </nav>
+  <div id="indeks" class="indeks-panel">
+    <div class="wrap indeks-grid">
+      <section aria-labelledby="ind-dzialy">
+        <h2 id="ind-dzialy">Działy</h2>
+        <ul class="indeks-list two">
+          <li><a href="aktualnosci.html?kat=aktualnosc">Aktualności<small>relacje i zapowiedzi Związku</small></a></li>
+          <li><a href="aktualnosci.html?kat=wydarzenie">Wydarzenia<small>uroczystości i rocznice</small></a></li>
+          <li><a href="aktualnosci.html?kat=historia">Historia<small>opracowania i artykuły</small></a></li>
+          <li><a href="aktualnosci.html?kat=biogram">Ludzie<small>życiorysy żołnierzy</small></a></li>
+          <li><a href="aktualnosci.html?kat=dokument">Dokumenty<small>rozkazy i materiały źródłowe</small></a></li>
+          <li><a href="#archiwum">Archiwum<small>Cyfrowe Archiwum i stara witryna</small></a></li>
+          <li><a href="#multimedia">Multimedia<small>filmy i galerie</small></a></li>
+          <li><a href="#zwiazek">Związek i kontakt<small>władze, dane, wsparcie</small></a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="ind-tematy">
+        <h2 id="ind-tematy">Tematy</h2>
+        <ul class="tematy">
+          <li><a href="aktualnosci.html?q=Bartek">Zgrupowanie „Bartka”</a></li>
+          <li><a href="aktualnosci.html?q=Kamesznica">Kamesznica</a></li>
+          <li><a href="aktualnosci.html?q=Brygada">Brygada Świętokrzyska</a></li>
+          <li><a href="aktualnosci.html?q=NZW">NZW</a></li>
+          <li><a href="aktualnosci.html?q=Białystok">Okręg Białystok</a></li>
+          <li><a href="aktualnosci.html?q=Podlasie">Podlasie</a></li>
+          <li><a href="aktualnosci.html?q=rocznic">Rocznice</a></li>
+          <li><a href="artykul.html">Tekst numeru</a></li>
+        </ul>
+        <button type="button" class="btn indeks-close" data-close>Zamknij indeks</button>
+      </section>
+    </div>
+  </div>
+</header>
+
+<main id="tresc" tabindex="-1">
+
+  <!-- ROZKŁADÓWKA NUMERU — element charakterystyczny wariantu C -->
+  <section class="wrap numer" aria-labelledby="numer-tytul">
+    <header class="numer-head">
+      <p class="kicker">Rozkładówka numeru · 13 października 2026</p>
+      <h2 id="numer-tytul">Rocznica, dokument i komentarz</h2>
+      <p>Jedna strona zestawia bieżącą wiadomość Związku, materiał źródłowy i objaśnienie historyka. <span class="demo-tag">zestawienie demonstracyjne</span></p>
+    </header>
+    <div class="spread">
+      <article class="col col-news" aria-labelledby="r-news">
+        <p class="col-label">I. Aktualność</p>
+        <figure class="photo-ph">
+          <div class="ph" role="img" aria-label="Miejsce na fotografię z obchodów w Kamesznicy">Miejsce na fotografię z obchodów — wymaga licencji</div>
+          <figcaption>Obchody 84. rocznicy powstania NSZ, Kamesznica. <span class="cred">Fot.: do uzupełnienia · licencja: nieustalona</span></figcaption>
+        </figure>
+        <h3 id="r-news"><a href="https://www.nsz.com.pl/84-rocznica-powstania-nsz/">84 rocznica powstania NSZ</a></h3>
+        <p class="dateline"><time datetime="2026-09-20">20 września 2026</time> · Kamesznica</p>
+        <p>Relacja z obchodów 84. rocznicy powstania NSZ w Kamesznicy. Związek informuje o przyznaniu mu przez IPN Złotego Medalu „Reipublicae Memoriae Meritum” oraz o liście Prezydenta RP do uczestników.</p>
+        <p class="byline">Bez podpisu autora (konto redakcyjne serwisu).</p>
+      </article>
+
+      <article class="col col-doc" aria-labelledby="r-doc">
+        <p class="col-label">II. Dokument</p>
+        <div class="doc-card">
+          <p class="doc-meta">Rozkaz nr 312 · <time datetime="1945-07-22">22 lipca 1945</time></p>
+          <h3 id="r-doc"><a href="https://www.nsz.com.pl/rozkaz-pplk-domana-komendanta-glownego-nzw/">Rozkaz płk. „Domana”, komendanta głównego NZW</a></h3>
+          <p>Fragment rozkazu płk. Tadeusza Danilewicza z krótkim wstępem redakcyjnym. Dokument dotyczy NZW, formacji odrębnej od NSZ.</p>
+          <p class="flag">Uwaga redakcyjna: brak sygnatury archiwalnej — do uzupełnienia, zanim materiał zostanie opisany jako źródło.</p>
+        </div>
+        <p class="dateline">Opublikowano w serwisie <time datetime="2021-10-28">28 października 2021</time></p>
+      </article>
+
+      <aside class="col col-comment" aria-labelledby="r-com">
+        <p class="col-label">III. Komentarz historyczny</p>
+        <h3 id="r-com">Dlaczego rocznica przypada 20 września</h3>
+        <p>Narodowe Siły Zbrojne powstały na mocy rozkazu nr 1/42 płk. Ignacego Oziewicza „Czesława” z 20 września 1942 r. To data umowna — formowanie trwało od lata 1942 r.</p>
+        <p>Dokument z kolumny II pochodzi z 1945 r. i dotyczy Narodowego Zjednoczenia Wojskowego. NZW powstało pod koniec 1944 r. z inicjatywy Stronnictwa Narodowego; nazw NSZ i NZW nie należy stosować zamiennie.</p>
+        <details class="more-box">
+          <summary>Źródła komentarza</summary>
+          <div class="db">
+            <ul>
+              <li><a href="https://ipn.gov.pl/pl/historia-z-ipn/229851,Narodowe-Sily-Zbrojne-19421946.html">IPN — Narodowe Siły Zbrojne (1942–1946)</a></li>
+              <li><a href="https://dzieje.pl/node/142103">dzieje.pl — 80 lat temu powołano Narodowe Siły Zbrojne</a></li>
+            </ul>
+            <p class="note-small">Dostęp: 13 października 2026.</p>
+          </div>
+        </details>
+      </aside>
+    </div>
+  </section>
+
+  <div class="wrap front">
+    <div class="front-main">
+
+      <section aria-labelledby="h-akt">
+        <h2 class="sec-title" id="h-akt">Z życia Związku <a href="aktualnosci.html?kat=aktualnosc">Wszystkie aktualności →</a></h2>
+        <ul class="news-list">
+          <li>
+            <span class="datebox" aria-hidden="true"><span class="d">19</span><span class="m">kwi</span><span class="y">2026</span></span>
+            <div>
+              <p class="kicker">Aktualności · Kamesznica</p>
+              <h3><a href="https://www.nsz.com.pl/otwarcia-cmentarza-wojennego-zolnierzy-narodowych-sil-zbrojnych-w-kamesznicy/">Otwarcie cmentarza wojennego żołnierzy Narodowych Sił Zbrojnych w Kamesznicy</a></h3>
+              <p class="dateline"><time datetime="2026-04-19">19 kwietnia 2026</time> · Zarząd Okręgu Śląsk Cieszyński ZŻNSZ</p>
+              <p>Zapowiedź uroczystości z 7 maja 2026 r.: pochówku szczątków żołnierzy zgrupowania kpt. Henryka Flamego „Bartka” i otwarcia cmentarza wojennego, z programem dnia według informacji IPN.</p>
+              <a class="src-link" href="artykul.html">Kontekst: tekst numeru o zgrupowaniu „Bartka” →</a>
+            </div>
+          </li>
+          <li>
+            <span class="datebox" aria-hidden="true"><span class="d">16</span><span class="m">maj</span><span class="y">2026</span></span>
+            <div>
+              <p class="kicker">Wydarzenia · Wisła</p>
+              <h3><a href="https://www.nsz.com.pl/uroczystosci-80-rocznicy-defilady-zolnierzy-narodowych-sil-zbrojnych-kpt-henryka-flame-ps-bartek-relacja/">Uroczystości 80. rocznicy defilady żołnierzy NSZ kpt. Henryka Flame ps. „Bartek” — relacja</a></h3>
+              <p class="dateline"><time datetime="2026-05-16">16 maja 2026</time> · bez podpisu autora</p>
+              <p>Relacja z obchodów 3 maja 2026 r. w Wiśle, przypominających przemarsz oddziału „Bartka” przez miasto 3 maja 1946 r.</p>
+            </div>
+          </li>
+          <li>
+            <span class="datebox" aria-hidden="true"><span class="d">6</span><span class="m">maj</span><span class="y">2026</span></span>
+            <div>
+              <p class="kicker">Wydarzenia · Holiszów</p>
+              <h3><a href="https://www.nsz.com.pl/81-rocznica-wyzwolenia-niemieckiego-obozu-koncentracyjnego-dla-kobiet-w-holiszowie-przez-brygade-swietokrzyska-narodowych-sil-zbrojnych/">81. rocznica wyzwolenia niemieckiego obozu koncentracyjnego dla kobiet w Holiszowie przez Brygadę Świętokrzyską NSZ</a></h3>
+              <p class="dateline"><time datetime="2026-05-06">6 maja 2026</time> · bez podpisu autora</p>
+              <p>Relacja z udziału delegacji Związku w obchodach w Holiszowie. Wpis przedstawia wydarzenia 5 maja 1945 r. z perspektywy Związku.</p>
+              <details class="more-box">
+                <summary>Kontekst historyczny i spór</summary>
+                <div class="db">
+                  <p>To, że Brygada Świętokrzyska w styczniu 1945 r. wycofała się na zachód na podstawie porozumienia z lokalnymi dowódcami Wehrmachtu, jest w literaturze bezsporne. Sporna pozostaje ocena tej decyzji (manewr czy współpraca). Liczba uwolnionych więźniarek w źródłach jest rozbieżna, dlatego kronika jej nie podaje.</p>
+                  <p><a href="https://ipn.gov.pl/pl/historia-z-ipn/229851,Narodowe-Sily-Zbrojne-19421946.html">IPN — synteza dziejów NSZ</a> · pełne zestawienie stanowisk: raport historyczny projektu.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-hist">
+        <h2 class="sec-title" id="h-hist">Dział historyczny <a href="aktualnosci.html?kat=historia">Więcej opracowań →</a></h2>
+        <div class="hist-grid">
+          <article>
+            <p class="kicker">Na początek · synteza</p>
+            <h3><a href="https://www.nsz.com.pl/narodowe-sily-zbrojne-1942-1946/">Narodowe Siły Zbrojne (1942–1946)</a></h3>
+            <p class="dateline">Rafał Sierchuła (IPN Poznań) · przedruk z „Biuletynu IPN” 8–9/2007</p>
+            <p>Zarys struktur politycznych, dowództwa, scalenia z AK i rozłamu oraz losów powojennych. Dobry punkt wejścia — warto czytać obok innych opracowań.</p>
+          </article>
+          <article>
+            <p class="kicker">Akcje zbrojne · 1944</p>
+            <h3><a href="https://www.nsz.com.pl/akcja-odbicia-oficerow-nsz-z-niemieckiego-wiezienia-w-siedlcach/">Akcja odbicia oficerów NSZ z niemieckiego więzienia w Siedlcach</a></h3>
+            <p class="dateline">Wydarzenie: <time datetime="1944-03-12">12 marca 1944</time></p>
+            <p>Uwolnienie członków sztabu Okręgu XII „Podlasie” aresztowanych przez Niemców.</p>
+            <p class="flag">Tekst w serwisie nie podaje źródeł ani autora — wymaga weryfikacji.</p>
+          </article>
+        </div>
+        <article class="feature" aria-labelledby="h-feature">
+          <figure class="photo-ph">
+            <div class="ph" role="img" aria-label="Miejsce na fotografię cmentarza wojennego w Kamesznicy">Miejsce na fotografię archiwalną — wymaga licencji</div>
+            <figcaption>Cmentarz wojenny w Kamesznicy. <span class="cred">Do pozyskania od IPN lub ZŻNSZ wraz z licencją</span></figcaption>
+          </figure>
+          <div>
+            <p class="kicker">Tekst numeru <span class="demo-tag">demonstracyjny</span></p>
+            <h3 id="h-feature"><a href="artykul.html">Od operacji „Lawina” do Kamesznicy</a></h3>
+            <p>Zgrupowanie kpt. Henryka Flamego „Bartka”: powojenna konspiracja, prowokacja aparatu bezpieczeństwa jesienią 1946 r. i poszukiwania prowadzone przez IPN zakończone pochówkiem w maju 2026 r.</p>
+            <p class="dateline">Czas czytania ok. 3 min · źródła: IPN, dzieje.pl</p>
+            <a class="btn" href="artykul.html">Czytaj tekst numeru</a>
+          </div>
+        </article>
+      </section>
+
+    </div>
+
+    <div class="front-side">
+      <section class="kalendarium" data-kalendarium aria-labelledby="h-kal">
+        <h2 class="sec-title" id="h-kal">Kalendarium</h2>
+        <p class="kicker kicker--ink" data-kal-label>Najbliższa rocznica</p>
+        <div class="kal-date">
+          <span class="kal-dm" data-kal-dm>9</span>
+          <span class="kal-m" data-kal-m>listopada<br>2012 r.</span>
+        </div>
+        <p class="kal-text" data-kal-text>Uchwała Sejmu RP w 70. rocznicę powstania NSZ (M.P. 2012 poz. 890).</p>
+        <p class="kal-src" data-kal-src>Źródło: <a href="https://eli.gov.pl/eli/MP/2012/890/ogl/pol/pdf">Monitor Polski</a></p>
+        <details class="more-box">
+          <summary>Pełna oś czasu 1942–2012</summary>
+          <div class="db">
+            <ol class="os-czasu">
+              <li><time datetime="1942-09-20">20 IX 1942</time><span>Rozkaz nr 1/42 płk. I. Oziewicza — powstanie NSZ.</span></li>
+              <li><time datetime="1943-08-01">1 VIII 1943</time><span>Płk T. Kurcyusz dowódcą NSZ.</span></li>
+              <li><time datetime="1944-03-07">7 III 1944</time><span>Umowa scaleniowa z AK; rozłam na NSZ-AK i NSZ-ZJ.</span></li>
+              <li><time datetime="1944-08">VIII 1944</time><span>Ok. 3,5 tys. żołnierzy NSZ w Powstaniu Warszawskim.</span></li>
+              <li><time datetime="1944-08-11">11 VIII 1944</time><span>Utworzenie Brygady Świętokrzyskiej.</span></li>
+              <li><time datetime="1944-12">koniec 1944</time><span>Powstaje NZW (z inicjatywy SN).</span></li>
+              <li><time datetime="1945-05-05">5 V 1945</time><span>Uwolnienie więźniarek w Holiszowie (liczby sporne).</span></li>
+              <li><time datetime="1947-02-15">15 II 1947</time><span>Aresztowanie ppłk. S. Kasznicy.</span></li>
+              <li><time datetime="1948-05-12">12 V 1948</time><span>Egzekucja Kasznicy; wyrok unieważniony w 1992 r.</span></li>
+              <li><time datetime="2011-02-03">3 II 2011</time><span>Ustawa o Dniu Pamięci „Żołnierzy Wyklętych”.</span></li>
+              <li><time datetime="2012-11-09">9 XI 2012</time><span>Uchwała Sejmu w 70. rocznicę NSZ.</span></li>
+            </ol>
+            <p class="note-small">Źródła: IPN, R. Wnuk („Dzieje Najnowsze” 2021), dzieje.pl, ELI. Dostęp 13.10.2026.</p>
+          </div>
+        </details>
+      </section>
+
+      <section class="biogram" aria-labelledby="h-ludzie">
+        <h2 class="sec-title" id="h-ludzie">Ludzie</h2>
+        <p class="kicker">Życiorys</p>
+        <h3><a href="https://www.nsz.com.pl/pplk-waclaw-nestorowicz-ps-kalina/">Ppłk Wacław Nestorowicz ps. „Kalina”</a></h3>
+        <p class="lifespan">ur. 1891 · komendant Okręgu NSZ Białystok</p>
+        <p>Obszerny biogram odtworzony ze zbiorów rodzinnych i archiwaliów IPN; autor wskazuje luki w dotychczasowej wiedzy.</p>
+        <p class="byline">Piotr Łapiński · przedruk z „Głosu znad Narwi” 2/2021</p>
+      </section>
+
+      <section aria-labelledby="h-wyd">
+        <h2 class="sec-title" id="h-wyd">Uroczystości 2026</h2>
+        <ul class="events">
+          <li><span class="plaque" aria-hidden="true"><span class="d">3</span><span class="m">maj</span></span>
+            <div><h3>80. rocznica defilady w Wiśle</h3><p><time datetime="2026-05-03">3 maja 2026</time> · Wisła</p></div></li>
+          <li><span class="plaque" aria-hidden="true"><span class="d">5</span><span class="m">maj</span></span>
+            <div><h3>81. rocznica wydarzeń w Holiszowie</h3><p><time datetime="2026-05-05">5 maja 2026</time> · Holiszów (Czechy)</p></div></li>
+          <li><span class="plaque" aria-hidden="true"><span class="d">7</span><span class="m">maj</span></span>
+            <div><h3>Pochówek i otwarcie cmentarza wojennego</h3><p><time datetime="2026-05-07">7 maja 2026</time> · Kamesznica</p></div></li>
+          <li><span class="plaque" aria-hidden="true"><span class="d">20</span><span class="m">wrz</span></span>
+            <div><h3>84. rocznica powstania NSZ</h3><p><time datetime="2026-09-20">20 września 2026</time> · Kamesznica</p></div></li>
+        </ul>
+        <p class="note-small">Wszystkie pozycje to wydarzenia minione. Zapowiedzi przyszłych uroczystości nie zostały zweryfikowane — miejsce na moduł zasilany z CMS.</p>
+      </section>
+
+      <section id="multimedia" aria-labelledby="h-mm">
+        <h2 class="sec-title" id="h-mm">Multimedia</h2>
+        <figure class="photo-ph">
+          <div class="ph" role="img" aria-label="Miejsce na odtwarzacz filmu">Miejsce na film — materiał wymaga licencji i napisów</div>
+          <figcaption>W obecnym serwisie dział „Filmy” liczy 105 wpisów (stan na 13.10.2026).</figcaption>
+        </figure>
+      </section>
+    </div>
+  </div>
+
+  <section id="archiwum" class="archiwum" aria-labelledby="h-arch">
+    <div class="wrap">
+      <h2 class="sec-title" id="h-arch">Archiwum i źródła</h2>
+      <div class="arch-grid">
+        <div>
+          <h3>Cyfrowe Archiwum ZŻNSZ</h3>
+          <p>Osobny serwis z ponad 8,5 tys. rekordów i filtrami według zespołów akt, formacji i dat.</p>
+          <a class="more" href="https://archiwumcyfrowe.nsz.com.pl/">Przejdź do archiwum ↗</a>
+        </div>
+        <div>
+          <h3>Dokumenty w serwisie</h3>
+          <p>Rozkazy i materiały źródłowe publikowane w portalu. Docelowo każdy z sygnaturą i opisem zasobu.</p>
+          <a class="more" href="aktualnosci.html?kat=dokument">Przeglądaj dokumenty →</a>
+        </div>
+        <div>
+          <h3>Dawna witryna</h3>
+          <p>Archiwalna wersja serwisu, utrzymywana jako osobny system.</p>
+          <a class="more" href="https://stara-strona.nsz.com.pl/">Otwórz dawną witrynę ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="zwiazek" class="zwiazek on-ink" aria-labelledby="h-zw">
+    <div class="wrap zw-grid">
+      <div>
+        <p class="kicker">O Związku</p>
+        <h2 id="h-zw">Związek Żołnierzy Narodowych Sił Zbrojnych</h2>
+        <p>Organizacja kombatancka upamiętniająca żołnierzy podziemia narodowego. Prowadzi działalność rocznicową, wydawniczą, archiwalną i edukacyjną, m.in. Akademię Kompetencji Cyfrowych dla seniorów 60+.</p>
+        <p class="note-small" style="color:#d8cfc0">Historia NSZ (1942–1947) i dzisiejsza działalność Związku to dwie różne warstwy serwisu.</p>
+      </div>
+      <div>
+        <h3>Dane organizacji</h3>
+        <dl>
+          <dt>KRS</dt><dd>0000153859</dd>
+          <dt>NIP</dt><dd>527-172-52-61</dd>
+          <dt>Siedziba</dt><dd>ul. 11 Listopada 17/19 lok. 115, 03-446 Warszawa</dd>
+          <dt>Redakcja</dt><dd>redakcja[at]nsz.com.pl</dd>
+        </dl>
+        <p class="note-small" style="color:#d8cfc0">Źródło: nsz.com.pl/kontakt, stan 13.10.2026.</p>
+      </div>
+      <div>
+        <h3>Biuletyn e-mail</h3>
+        <form class="demo-form" data-demo-form>
+          <label for="nl-email">Adres e-mail (formularz demonstracyjny)</label>
+          <div class="row">
+            <input id="nl-email" type="email" autocomplete="off">
+            <button class="btn" type="submit">Zapisz</button>
+          </div>
+          <p data-demo-msg aria-live="polite">Formularz nie wysyła danych.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer on-ink">
+  <div class="wrap">
+    <p><strong>Prototyp koncepcyjny — nie jest oficjalnym serwisem.</strong> Wariant C „Kronika Niepodległości”, przygotowany 13 października 2026 r.</p>
+    <p>Fotografie zastąpiono oznaczonymi miejscami. Logo organizacji wymaga dostarczenia oryginalnego pliku. Kroje: Playfair Display i Source Serif 4 (SIL Open Font License 1.1).</p>
+    <p><a href="../index.html">Wszystkie warianty</a> · <a href="aktualnosci.html">Aktualności</a> · <a href="artykul.html">Tekst numeru</a></p>
+  </div>
+</footer>
+
+<script src="../assets/data/content.js"></script>
+<script src="../assets/shared/proto.js"></script>
+<script src="kronika.js"></script>
+</body>
+</html>

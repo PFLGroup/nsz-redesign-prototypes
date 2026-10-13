@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tekst numeru: zgrupowanie „Bartka” · Kronika · Wariant C · Prototyp ZŻNSZ</title>
+<meta name="description" content="Osiemdziesiąt lat po likwidacji oddziałów żołnierze zgrupowania kpt. Henryka Flamego „Bartka” zostali pochowani na cmentarzu wojennym w Kamesznicy. Ich his">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/playfair-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/shared/a11y.css">
+<link rel="stylesheet" href="kronika.css">
+</head>
+<body>
+<div class="progress" data-reading-progress role="progressbar" aria-label="Postęp czytania" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<a class="skip-link" href="#tresc">Przejdź do treści</a>
+<div class="proto-banner" role="note"><strong>Prototyp koncepcyjny — nie jest oficjalnym serwisem.</strong> Wariant C „Kronika Niepodległości”. Zajawki napisała redakcja prototypu; tytuły, daty i linki źródłowe pochodzą z nsz.com.pl. <a href="../index.html">Wróć do wyboru wariantów</a></div>
+
+<header class="masthead">
+  <div class="wrap topline">
+    <p>Wydanie internetowe · <time datetime="2026-10-13">wtorek, 13 października 2026</time></p>
+    <div class="tools">
+      <button type="button" class="btn-text" data-motion-toggle aria-pressed="false"><span data-motion-label>Animacje: włączone</span></button>
+      <a href="index.html#zwiazek">Kontakt</a>
+    </div>
+  </div>
+  <div class="wrap nameplate">
+    <p class="ear"><strong>Pamięć · źródła · działalność</strong>Serwis organizacji kombatanckiej upamiętniającej żołnierzy podziemia narodowego.</p>
+    <a class="brand" href="index.html">
+      <span class="logo-ph" aria-hidden="true">[logo ZŻNSZ — oryginalny plik organizacji]</span>
+      <span class="brand-sub">Serwis Związku</span>
+      <span class="brand-name">Związek Żołnierzy<br>Narodowych Sił Zbrojnych</span>
+    </a>
+    <form class="search" role="search" action="aktualnosci.html" data-quick-search data-list-href="aktualnosci.html">
+      <label for="szukaj">Szukaj w kronice</label>
+      <div class="row">
+        <input id="szukaj" name="q" type="search" autocomplete="off" placeholder="np. Kamesznica, NZW">
+        <button class="btn btn--solid" type="submit">Szukaj</button>
+      </div>
+      <p class="sr-only" data-results-status aria-live="polite"></p>
+      <ul data-results></ul>
+    </form>
+  </div>
+  <div class="wrap"><hr class="nameplate-rule" aria-hidden="true"></div>
+  <nav class="dzialy" aria-label="Działy serwisu">
+    <div class="wrap dzialy-inner">
+      <ul>
+        <li><a href="aktualnosci.html?kat=aktualnosc">Aktualności</a></li>
+        <li><a href="aktualnosci.html?kat=historia" aria-current="true">Historia</a></li>
+        <li><a href="aktualnosci.html?kat=biogram">Ludzie</a></li>
+        <li><a href="aktualnosci.html?kat=dokument">Dokumenty</a></li>
+        <li><a href="aktualnosci.html?kat=wydarzenie">Wydarzenia</a></li>
+        <li><a href="index.html#archiwum">Archiwum</a></li>
+        <li><a href="index.html#zwiazek">O Związku</a></li>
+      </ul>
+      <button type="button" class="btn indeks-btn" data-disclosure aria-controls="indeks">Indeks działów i tematów <span class="chev" aria-hidden="true">▾</span></button>
+    </div>
+  </nav>
+  <div id="indeks" class="indeks-panel">
+    <div class="wrap indeks-grid">
+      <section aria-labelledby="ind-dzialy">
+        <h2 id="ind-dzialy">Działy</h2>
+        <ul class="indeks-list two">
+          <li><a href="aktualnosci.html?kat=aktualnosc">Aktualności<small>relacje i zapowiedzi Związku</small></a></li>
+          <li><a href="aktualnosci.html?kat=wydarzenie">Wydarzenia<small>uroczystości i rocznice</small></a></li>
+          <li><a href="aktualnosci.html?kat=historia">Historia<small>opracowania i artykuły</small></a></li>
+          <li><a href="aktualnosci.html?kat=biogram">Ludzie<small>życiorysy żołnierzy</small></a></li>
+          <li><a href="aktualnosci.html?kat=dokument">Dokumenty<small>rozkazy i materiały źródłowe</small></a></li>
+          <li><a href="index.html#archiwum">Archiwum<small>Cyfrowe Archiwum i stara witryna</small></a></li>
+          <li><a href="index.html#multimedia">Multimedia<small>filmy i galerie</small></a></li>
+          <li><a href="index.html#zwiazek">Związek i kontakt<small>władze, dane, wsparcie</small></a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="ind-tematy">
+        <h2 id="ind-tematy">Tematy</h2>
+        <ul class="tematy">
+          <li><a href="aktualnosci.html?q=Bartek">Zgrupowanie „Bartka”</a></li>
+          <li><a href="aktualnosci.html?q=Kamesznica">Kamesznica</a></li>
+          <li><a href="aktualnosci.html?q=Brygada">Brygada Świętokrzyska</a></li>
+          <li><a href="aktualnosci.html?q=NZW">NZW</a></li>
+          <li><a href="aktualnosci.html?q=Białystok">Okręg Białystok</a></li>
+          <li><a href="aktualnosci.html?q=Podlasie">Podlasie</a></li>
+          <li><a href="aktualnosci.html?q=rocznic">Rocznice</a></li>
+          <li><a href="artykul.html">Tekst numeru</a></li>
+        </ul>
+        <button type="button" class="btn indeks-close" data-close>Zamknij indeks</button>
+      </section>
+    </div>
+  </div>
+</header>
+
+<main id="tresc" tabindex="-1">
+  <article aria-labelledby="art-title">
+    <div class="wrap">
+    <header class="article-head">
+      <nav class="crumbs" aria-label="Okruszki">
+        <ol><li><a href="index.html">Strona główna</a></li><li><a href="aktualnosci.html?kat=historia">Historia</a></li><li aria-current="page">Tekst numeru</li></ol>
+      </nav>
+      <p class="kicker">Dział historyczny · Tekst numeru <span class="demo-tag">tekst demonstracyjny</span></p>
+      <h1 id="art-title">Od operacji „Lawina” do Kamesznicy. Zgrupowanie kpt. Henryka Flamego „Bartka” i jego upamiętnienie</h1>
+      <p class="lead">Osiemdziesiąt lat po likwidacji oddziałów żołnierze zgrupowania kpt. Henryka Flamego „Bartka” zostali pochowani na cmentarzu wojennym w Kamesznicy. Ich historia łączy powojenną konspirację, prowokację aparatu bezpieczeństwa i wieloletnie poszukiwania prowadzone przez Instytut Pamięci Narodowej.</p>
+      <ul class="art-meta">
+        <li><strong>Data:</strong> <time datetime="2026-10-13">13 października 2026</time></li>
+        <li><strong>Autor:</strong> brak podpisu — redakcja prototypu (opracowanie demonstracyjne na podstawie źródeł wymienionych niżej).</li>
+        <li><strong>Czas czytania:</strong> ok. 3 min</li>
+      </ul>
+      <p class="demo-notice"><strong>Tekst demonstracyjny przygotowany do prototypu — nie jest publikacją ZŻNSZ.</strong> Opracowanie przygotowano do porównania projektów; nie zawiera cytatów ani danych spoza wymienionych źródeł.</p>
+    </header>
+
+    <div class="article-layout">
+      <nav class="toc" aria-label="Spis treści" data-toc>
+        <details open>
+          <summary>W tym tekście</summary>
+          <ol>
+            <li><a href="#dowodca-i-oddzial">Dowódca i oddział</a></li>
+            <li><a href="#operacja-lawina">Operacja „Lawina”</a></li>
+            <li><a href="#poszukiwania-i-identyfikacja">Poszukiwania i identyfikacja</a></li>
+            <li><a href="#pogrzeb-7-maja-2026-r">Pogrzeb 7 maja 2026 r.</a></li>
+            <li><a href="#slowniczek">Słowniczek</a></li>
+            <li><a href="#jak-czytac-te-historie">Jak czytać tę historię</a></li>
+            <li><a href="#zrodla">Źródła</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <div class="article-body" data-article-body>
+        <section aria-labelledby="dowodca-i-oddzial">
+          <h2 id="dowodca-i-oddzial">Dowódca i oddział</h2>
+        <p>Henryk Flame urodził się w 1918 r. we Frysztacie na Zaolziu. Przed wojną i w czasie wojny był lotnikiem. Od lata 1945 do jesieni 1946 r. dowodził zgrupowaniem działającym na Podbeskidziu i Górnym Śląsku, opisywanym w publikacjach IPN jako największy oddział antykomunistycznego podziemia w tym regionie. Według ustaleń IPN pod jego dowództwem walczyło w tym czasie kilkuset partyzantów.</p>
+        <p>Obozowiska oddziału znajdowały się w rejonie Baraniej Góry. Najczęściej przywoływanym epizodem pozostaje zajęcie i przemarsz przez Wisłę 3 maja 1946 r., w rocznicę uchwalenia Konstytucji 3 Maja — święta, którego publiczne obchodzenie władze komunistyczne w tym czasie ograniczały.</p>
+        </section>
+        <section aria-labelledby="operacja-lawina">
+          <h2 id="operacja-lawina">Operacja „Lawina”</h2>
+        <p>Jesienią 1946 r. Urząd Bezpieczeństwa Publicznego przeprowadził operację o kryptonimie „Lawina”. Wykorzystując agenturę, funkcjonariusze zorganizowali rzekomy przerzut partyzantów na Zachód, do amerykańskiej strefy okupacyjnej. Według ustaleń IPN żołnierzy przewieziono na Opolszczyznę w kilku transportach i zamordowano; łączna liczba ofiar represji wobec zgrupowania przekracza sto osób.</p>
+        <p>Sam Flame ujawnił się w marcu 1947 r. w ramach amnestii. Zginął 1 grudnia 1947 r. w Zabrzegu, zastrzelony przez milicjanta. Został pochowany na cmentarzu parafialnym w Czechowicach.</p>
+        </section>
+        <section class="gallery" aria-labelledby="h-gal" data-gallery>
+          <div class="gallery-head">
+            <h2 id="h-gal">Galeria</h2>
+            <p class="status" data-status aria-live="polite">3 ilustracje</p>
+          </div>
+          <div class="gallery-track" data-track>
+          <div data-slide>
+            <figure class="photo-ph">
+              <div class="ph" role="img" aria-label="Miejsce na fotografię cmentarza wojennego w Kamesznicy">Miejsce na fotografię archiwalną — wymaga licencji</div>
+              <figcaption>Miejsce na fotografię: cmentarz wojenny w Kamesznicy — do pozyskania od IPN lub ZŻNSZ wraz z licencją. <span class="cred">Autor: do ustalenia · licencja: nieustalona</span></figcaption>
+            </figure>
+          </div>
+          <div data-slide>
+            <figure class="photo-ph">
+              <div class="ph" role="img" aria-label="Miejsce na fotografię Baraniej Góry">Miejsce na fotografię archiwalną — wymaga licencji</div>
+              <figcaption>Miejsce na fotografię: rejon Baraniej Góry — zdjęcie krajobrazowe na wolnej licencji, do weryfikacji. <span class="cred">Autor: do ustalenia · licencja: nieustalona</span></figcaption>
+            </figure>
+          </div>
+          <div data-slide>
+            <figure class="photo-ph">
+              <div class="ph" role="img" aria-label="Miejsce na reprodukcję dokumentu archiwalnego">Miejsce na fotografię archiwalną — wymaga licencji</div>
+              <figcaption>Miejsce na reprodukcję dokumentu z zasobu Archiwum IPN — wymaga zgody i sygnatury. <span class="cred">Autor: do ustalenia · licencja: nieustalona</span></figcaption>
+            </figure>
+          </div>
+          </div>
+          <div class="gallery-controls">
+            <button type="button" class="btn" data-prev aria-label="Poprzednia ilustracja">←<span class="lbl"> Poprzednia</span></button>
+            <div data-dots></div>
+            <button type="button" class="btn" data-next aria-label="Następna ilustracja"><span class="lbl">Następna </span>→</button>
+          </div>
+          <p class="no-js-note">Bez JavaScriptu wszystkie ilustracje są widoczne jedna pod drugą.</p>
+        </section>
+        <section aria-labelledby="poszukiwania-i-identyfikacja">
+          <h2 id="poszukiwania-i-identyfikacja">Poszukiwania i identyfikacja</h2>
+        <p>Szczątki ofiar operacji „Lawina” odnaleziono w wyniku prac poszukiwawczych Biura Poszukiwań i Identyfikacji IPN na Opolszczyźnie. Część ofiar zidentyfikowano genetycznie; według komunikatu IPN spośród niemal 60 pochowanych w 2026 r. żołnierzy 25 znanych jest z imienia i nazwiska.</p>
+        <p>Budowę cmentarza wojennego w Kamesznicy rozpoczęto w 2022 r., a zakończono jesienią 2025 r. Centralnym elementem jest pięciometrowy pomnik z prześwitem w kształcie krzyża, przez który widać Baranią Górę — rejon dawnych obozowisk oddziału.</p>
+        </section>
+        <section aria-labelledby="pogrzeb-7-maja-2026-r">
+          <h2 id="pogrzeb-7-maja-2026-r">Pogrzeb 7 maja 2026 r.</h2>
+        <p>Uroczystości pogrzebowe połączono z otwarciem cmentarza. Wzięli w nich udział m.in. Prezydent RP, przedstawiciele IPN, rodziny poległych, organizacje kombatanckie i harcerze. Rodzinom zidentyfikowanych żołnierzy przekazano flagi państwowe.</p>
+        <p>Związek Żołnierzy NSZ zapowiadał uroczystość w swoim serwisie, a obchody 84. rocznicy powstania NSZ 20 września 2026 r. również odbyły się w Kamesznicy.</p>
+        </section>
+        <section aria-labelledby="slowniczek">
+          <h2 id="slowniczek">Słowniczek</h2>
+        <dl class="glossary">
+          <dt>Urząd Bezpieczeństwa Publicznego (UBP)</dt><dd>terenowe struktury komunistycznego aparatu bezpieczeństwa, podległe Ministerstwu Bezpieczeństwa Publicznego; odpowiadały m.in. za zwalczanie podziemia niepodległościowego.</dd>
+          <dt>Amnestia z 1947 r.</dt><dd>ustawa z 22 lutego 1947 r., na mocy której członkowie podziemia mogli się „ujawnić”. Ujawnienie nie chroniło przed późniejszymi represjami, co w wielu biografiach z tego okresu jest wątkiem powracającym.</dd>
+          <dt>Biuro Poszukiwań i Identyfikacji IPN</dt><dd>komórka Instytutu Pamięci Narodowej prowadząca poszukiwania miejsc pochówku ofiar represji i identyfikację szczątków, m.in. metodami genetycznymi.</dd>
+          <dt>Narodowe Siły Zbrojne (NSZ)</dt><dd>formacja zbrojna podziemia narodowego, utworzona w 1942 r. Nie należy jej utożsamiać z Narodowym Zjednoczeniem Wojskowym (NZW), powołanym przez Stronnictwo Narodowe jesienią 1944 r. Oddział „Bartka” w literaturze określany jest jako zgrupowanie NSZ.</dd>
+        </dl>
+        </section>
+        <section aria-labelledby="jak-czytac-te-historie">
+          <h2 id="jak-czytac-te-historie">Jak czytać tę historię</h2>
+        <p>Materiał oparto przede wszystkim na komunikatach i publikacjach IPN oraz na serwisie dzieje.pl; relacje Związku Żołnierzy NSZ potraktowano jako źródło informacji o upamiętnieniu, a nie jako podstawę rekonstrukcji wydarzeń z lat 1945–1947.</p>
+        <p>Historia zgrupowania obejmuje także zagadnienia sporne, wymagające osobnego, źródłowego omówienia. Krótki tekst demonstracyjny ich nie rozstrzyga — odsyła do raportu historycznego projektu, bibliografii oraz do publikacji IPN wymienionych poniżej.</p>
+        </section>
+        <section class="sources" aria-labelledby="zrodla">
+          <h2 id="zrodla">Źródła</h2>
+          <ol>
+            <li><a href="https://katowice.ipn.gov.pl/pl3/aktualnosci/241705,Uroczystosci-pogrzebowe-zolnierzy-NSZ-ze-zgrupowania-kpt-Henryka-Flamego-Bartka-.html">IPN Katowice — Uroczystości pogrzebowe żołnierzy NSZ ze zgrupowania kpt. Henryka Flamego „Bartka”</a> <span class="acc">(dostęp: 2026-10-13)</span></li>
+            <li><a href="https://ipn.gov.pl/pl/aktualnosci/241489,Wracaja-jako-bohaterowie.html">IPN — „Wracają jako bohaterowie”</a> <span class="acc">(dostęp: 2026-10-13)</span></li>
+            <li><a href="https://ipn.gov.pl/pl/wydawnictwo/e-booki/241624,Poswiecic-swe-sily-majatek-a-nawet-zycie-Henryk-Flame-Bartek-i-jego-zolnierze.html">IPN, wydawnictwo — „Poświęcić swe siły, majątek, a nawet życie. Henryk Flame „Bartek” i jego żołnierze” (e-book)</a> <span class="acc">(dostęp: 2026-10-13)</span></li>
+            <li><a href="https://dzieje.pl/node/99089">dzieje.pl — materiały o Henryku Flamem (defilada w Wiśle, amnestia, śmierć w Zabrzegu)</a> <span class="acc">(dostęp: 2026-10-13)</span></li>
+            <li><a href="https://www.nsz.com.pl/otwarcia-cmentarza-wojennego-zolnierzy-narodowych-sil-zbrojnych-w-kamesznicy/">nsz.com.pl — Otwarcie cmentarza wojennego w Kamesznicy (autoprezentacja ZŻNSZ)</a> <span class="acc">(dostęp: 2026-10-13)</span></li>
+          </ol>
+        </section>
+        <div class="backnav">
+          <a class="btn" href="aktualnosci.html">← Wróć do listy materiałów</a>
+          <a class="btn" href="index.html">Strona główna</a>
+        </div>
+      </div>
+
+      <aside class="margin-col" aria-label="Na marginesie">
+        <div class="note">
+          <h2>Na marginesie</h2>
+          <p>NSZ i NZW to różne formacje. Oddział „Bartka” literatura określa jako zgrupowanie NSZ.</p>
+        </div>
+        <div class="note">
+          <h2>Daty w tekście</h2>
+          <p><time datetime="1946-05-03">3 V 1946</time> — przemarsz przez Wisłę<br>
+          <time datetime="1947-12-01">1 XII 1947</time> — śmierć H. Flamego<br>
+          <time datetime="2026-05-07">7 V 2026</time> — pogrzeb w Kamesznicy</p>
+        </div>
+        <div class="note">
+          <h2>Uwaga redakcyjna</h2>
+          <p>Relacje Związku potraktowano jako źródło o upamiętnieniu, nie jako podstawę rekonstrukcji wydarzeń z lat 1945–1947.</p>
+        </div>
+      </aside>
+    </div>
+    </div>
+  </article>
+
+  <section class="related" aria-labelledby="h-rel">
+    <div class="wrap">
+      <h2 class="sec-title" id="h-rel">Powiązane materiały</h2>
+      <ul class="related-grid">
+        <li>
+          <p class="kicker">Aktualności</p>
+          <h3><a href="https://www.nsz.com.pl/otwarcia-cmentarza-wojennego-zolnierzy-narodowych-sil-zbrojnych-w-kamesznicy/">Otwarcie cmentarza wojennego żołnierzy Narodowych Sił Zbrojnych w Kamesznicy</a></h3>
+          <p class="dateline"><time datetime="2026-04-19">19.04.2026</time></p>
+        </li>
+        <li>
+          <p class="kicker">Aktualności</p>
+          <h3><a href="https://www.nsz.com.pl/uroczystosci-80-rocznicy-defilady-zolnierzy-narodowych-sil-zbrojnych-kpt-henryka-flame-ps-bartek-relacja/">Uroczystości 80. rocznicy defilady żołnierzy Narodowych Sił Zbrojnych kpt. Henryka Flame ps. „Bartek” – Relacja</a></h3>
+          <p class="dateline"><time datetime="2026-05-16">16.05.2026</time></p>
+        </li>
+        <li>
+          <p class="kicker">Artykuły i opracowania</p>
+          <h3><a href="https://www.nsz.com.pl/narodowe-sily-zbrojne-1942-1946/">Narodowe Siły Zbrojne (1942–1946)</a></h3>
+          <p class="dateline"><time datetime="2021-11-05">5.11.2021</time></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer on-ink">
+  <div class="wrap">
+    <p><strong>Prototyp koncepcyjny — nie jest oficjalnym serwisem.</strong> Wariant C „Kronika Niepodległości”, przygotowany 13 października 2026 r.</p>
+    <p>Fotografie zastąpiono oznaczonymi miejscami. Logo organizacji wymaga dostarczenia oryginalnego pliku. Kroje: Playfair Display i Source Serif 4 (SIL Open Font License 1.1).</p>
+    <p><a href="../index.html">Wszystkie warianty</a> · <a href="aktualnosci.html">Aktualności</a> · <a href="artykul.html">Tekst numeru</a></p>
+  </div>
+</footer>
+
+<script src="../assets/data/content.js"></script>
+<script src="../assets/shared/proto.js"></script>
+</body>
+</html>

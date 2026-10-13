@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><body><pre id="o"></pre>
+<iframe id="f" width="390" height="900"></iframe>
+<script>
+var out=[];function log(s){out.push(s);document.getElementById('o').textContent=out.join('\n');}
+var f=document.getElementById('f');var B='file:///D:/Automatyzacje/nsz-redesign-prototypes/public/01-nowoczesny/';
+var steps=[
+ ['index.html',function(d,w){var t=d.querySelector('.nav-toggle');t.click();log('menu open: '+d.getElementById('a-nav').classList.contains('is-open')+' visible='+(d.getElementById('a-nav').offsetHeight>0));
+   var s=d.querySelector('.search-toggle');s.click();var p=d.getElementById('search-panel');log('search panel shown: '+!p.hidden);
+   var i=d.getElementById('q-global');i.value='Kames';i.dispatchEvent(new w.Event('input'));log('quick results: '+d.querySelectorAll('[data-results] li').length);
+   var tabs=d.querySelectorAll('.ti-tab');tabs[1].click();log('tab2 selected: '+tabs[1].getAttribute('aria-selected')+' panel visible: '+!d.getElementById('temat-brygada').hidden+' panel1 hidden: '+d.getElementById('temat-bartek').hidden);
+   log('errors: '+(w.__err||0));}],
+ ['aktualnosci.html?kat=dokument',function(d,w){log('kat=dokument visible: '+[].filter.call(d.querySelectorAll('[data-item]'),function(x){return !x.hidden}).length);
+   var i=d.getElementById('q-list');i.value='zzzz';i.dispatchEvent(new w.Event('input'));log('empty shown: '+!d.querySelector('[data-empty]').hidden);
+   d.querySelector('[data-clear-filters]').click();log('after clear: '+[].filter.call(d.querySelectorAll('[data-item]'),function(x){return !x.hidden}).length+' count: '+d.querySelector('[data-count]').textContent);}],
+ ['aktualnosci.html?q=Brygada',function(d,w){log('q=Brygada visible: '+[].filter.call(d.querySelectorAll('[data-item]'),function(x){return !x.hidden}).length);}],
+ ['artykul.html',function(d,w){var st=d.querySelector('[data-status]');log('gallery: '+st.textContent);d.querySelector('[data-next]').click();log('after next: '+st.textContent);
+   var vis=[].filter.call(d.querySelectorAll('[data-slide]'),function(x){return x.offsetHeight>0}).length;log('visible slides: '+vis);
+   d.querySelector('[data-motion-toggle]').click();log('motion toggle pressed: '+d.querySelector('[data-motion-toggle]').getAttribute('aria-pressed'));}]
+];
+var k=0;function next(){if(k>=steps.length){log('DONE');return;}var st=steps[k++];f.onload=function(){var w=f.contentWindow;w.onerror=function(){w.__err=(w.__err||0)+1};setTimeout(function(){try{st[1](f.contentDocument,w)}catch(e){log('ERR '+st[0]+' '+e.message)}next()},400)};f.src=B+st[0];}
+next();
+</script>

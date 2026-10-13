@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>harness</title>
+<style>body{margin:0;background:#888;font:14px sans-serif}iframe{border:0;display:block;background:#fff}#o{position:fixed;right:4px;top:4px;background:#fff;padding:4px;max-width:180px}</style>
+<iframe id="f" width="390" height="2400"></iframe><div id="o">?</div>
+<script>var q=new URLSearchParams(location.search);var f=document.getElementById('f');f.width=q.get('w')||390;f.height=q.get('h')||2400;
+f.onload=function(){try{var d=f.contentDocument.documentElement;setTimeout(function(){document.getElementById('o').textContent='vw '+f.width+' scrollW '+d.scrollWidth+' H '+d.scrollHeight;var wide=[];f.contentDocument.querySelectorAll('body *').forEach(function(el){var r=el.getBoundingClientRect();if(r.right>f.width+1&&r.width>0)wide.push(el.tagName+'.'+el.className)});document.getElementById('o').textContent+=' | '+wide.slice(0,6).join(' ');},500)}catch(e){document.getElementById('o').textContent='ERR '+e.message}};f.src=q.get('src');</script>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><title>ramka testowa</title>
+<style>body{margin:0;background:#888}iframe{border:0;display:block;background:#fff}</style></head>
+<body><iframe id="f"></iframe>
+<script>
+var p=new URLSearchParams(location.search),f=document.getElementById('f');
+f.style.width=(p.get('w')||390)+'px';f.style.height=(p.get('h')||2400)+'px';f.src=p.get('src');
+f.onload=function(){try{var d=f.contentDocument,de=d.documentElement;
+var over=de.scrollWidth>de.clientWidth;var wide=[];d.querySelectorAll('body *').forEach(function(el){var r=el.getBoundingClientRect();if(r.right>de.clientWidth+1&&r.width>0)wide.push(el.tagName+'.'+el.className)});
+document.title='OVERFLOW='+over+' sw='+de.scrollWidth+' cw='+de.clientWidth+' wide='+wide.slice(0,8).join('|');}catch(e){document.title='ERR '+e}};
+</script></body></html>
